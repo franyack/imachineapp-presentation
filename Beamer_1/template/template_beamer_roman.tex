@@ -1,0 +1,396 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{beamerthemeshadow}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage[font=Times,timeinterval=30, timeduration=30.00, timedeath=0,timewarningfirst=80, timewarningsecond=90]{tdclock}
+\usepackage{multirow}
+\usepackage[T1]{fontenc} % fix some warnings with fonts
+\usepackage{fix-cm}      % fix some warnings with fonts
+
+ \useoutertheme{infolines}
+
+\usefonttheme[onlymath]{serif}
+\usefonttheme[onlysmall]{structurebold}
+ 
+\usepackage{color} 
+
+\setbeamertemplate{navigation symbols}{}
+\usetheme{Darmstadt}
+\usecolortheme{orchid}
+\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+
+%\usetheme{Berlin}
+%\useoutertheme{infolines}
+%\setbeamercovered{dynamic}
+
+%-----------------------------------------
+% Definición de comandos útiles
+%-----------------------------------------
+\newcommand{\RR}{{\mathbb{R}}}
+\newcommand{\NN}{{\mathbb{N}}}
+\newcommand{\ZZ}{{\mathbb{Z}}}
+\newcommand{\vs}{{\vspace{5mm}}}
+\newcommand{\vts}{{\vspace{15mm}}}
+\newcommand{\hs}{{\hspace{5mm}}}
+\newcommand{\hts}{{\hspace{15mm}}}
+\newcommand{\vv}[1]{{\mathbf{#1}}}
+\newcommand{\expected}[2][\!]{\:\mathop{\mathcal{E}}\limits_{#1}\!\left[{#2}\right]}
+\renewcommand{\vec}[1]{\boldsymbol{\mathbf{#1}}}
+
+\title[]{Most Discriminative Atom Selection for Apnea-Hypopnea Events Detection}
+%
+\author[]{R.E. Rolon \inst{1} \and L.E. Di Persia \inst{1,2} \and H.L. Rufiner \inst{1,2,3} \and R.D. Spies \inst{2,4}}
+\institute[]{\inst{1} Instituto de I+D en Se\~{n}ales, Sistemas e Inteligencia Computacional, sinc($i$), UNL-CONICET. Santa Fe, Argentina. \and \inst{2} Consejo Nacional de Investigaciones Cient\'{i}ficas y T\'{e}cnicas, CONICET. Argentina. \and \inst{3} Laboratorio de Cibern\'{e}tica, Fac. de Ingenier\'{i}a, Univ. Nacional de Entre R\'{i}os. Entre R\'{i}os, Argentina. \and \inst{4} Instituto de Matem\'{a}tica Aplicada del Litoral, IMAL. Santa Fe, Argentina.}
+
+
+\makeatletter
+\setbeamertemplate{footline}
+{
+	\leavevmode%
+	\hbox{%
+		\begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}%
+			\usebeamerfont{date in head/foot}sinc($i$), UNL-CONICET - IMAL~~\beamer@ifempty{\insertshortauthor}{}{}
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+			\usebeamerfont{author in head/foot}CLAIB 2014
+		\end{beamercolorbox}}%
+		\begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+			\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+			\insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+		\end{beamercolorbox}%
+		\vskip0pt%
+	}
+	\makeatother
+
+\date[30/10/14]{\tiny October 30, 2014}
+
+\logo{\includegraphics[height=3mm, angle=90]{unl}}
+
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+\begin{document}
+%----------------------------------
+\begin{frame}
+%\initclock
+\titlepage
+\end{frame}
+
+\begin{frame}
+ \tableofcontents
+\end{frame}
+
+%---------------------------------------
+\section{Introduction}
+%---------------------------------------
+\subsection{Motivation}
+%---------------------------------------
+\begin{frame}
+\frametitle {Motivation}
+\begin{block}{}
+	\begin{itemize}
+		\item The Obstructive Sleep Apnea-Hypopnea (OSAH) syndrome is characterized by repetitive episodes of airway narrowing during sleep.
+		\pause
+		\item The OSAH has a prevalence of 2\% to 4\% in the adult population.
+		\pause
+		\item The current gold standard diagnostic test for OSAH is an overnight polysomnography (PSG) in a sleep laboratory.
+	\end{itemize}
+\end{block}
+\end{frame}
+%--------------------------------------- 
+  \begin{frame}
+\frametitle {Medical criteria}
+\begin{itemize}
+\item \alert{\textit{apnea:}} if the amplitude of the airflow signal decreases below 25\% of the ``baseline'' breathing amplitude and it remains below that level for more than 10 seconds.\\
+\pause
+\item \alert{\textit{hypopnea:}} if the amplitude of the respiratory signal decreases below 70\% of the ``baseline'' breathing amplitude, it remains so for more than 10 seconds for more than 2 breathe periods.\\
+\end{itemize}
+\pause
+Apnea-Hypopnea Index (AHI) = average number of AH events per hour.
+\begin{itemize}
+	\item 5$<$AHI$\leq$15, mild.
+	\item \alert{15$<$AHI$\leq$30}, moderate.
+	\item \alert{AHI$>$30}, severe.
+\end{itemize}
+\end{frame}
+%--------------------------------------- 
+\begin{frame}
+\frametitle {Polysomnography}
+  \begin{center}
+        %\includegraphics[width=0.75\columnwidth,trim=0 0cm 0 0cm,clip]{imagenes/psgb1} 
+  \end{center}
+  \end{frame}
+%---------------------------------------
+\section{Materials and methods}
+%---------------------------------------
+\subsection{Proposed method}
+%---------------------------------------
+\begin{frame}
+\frametitle {Proposed method}
+\begin{center}
+	%\includegraphics[height=6.5cm]{imagenes/Diagrama1.eps}
+\end{center}
+\end{frame}
+%---------------------------------------
+\subsection{Database}
+%---------------------------------------
+\begin{frame}
+\frametitle {SHHS: Sleep Heart Health Study}
+The SHHS database contains 1000 PSGs of the ``Sleep and Epidemiology Research Center (SERC)\footnote{http://cci.case.edu/serc/}'' at the ``Case Western Reserve University''.\\
+	\pause
+\begin{itemize}
+	\item Biomedical signals:
+	\begin{itemize}
+	 	\item Nasal airflow
+	 	\item \alert{$\text{SaO}_2$}
+   	 	\item OXStat
+   	 	\item EEG
+	\end{itemize}
+	\pause
+   \item Expert annotations:
+	\begin{itemize} 
+	 \item \alert{Respiratory events (AH)}
+ 	 \item Sleep stages
+	\end{itemize}
+  \end{itemize}
+\end{frame}
+%---------------------------------------
+\begin{frame}
+\frametitle {Signals of interest}
+\begin{center}
+% \includegraphics[height=7cm]{imagenes/sen_int.eps}
+\end{center}
+\end{frame}
+%---------------------------------------
+\subsection{Sparse representations}
+%---------------------------------------
+\begin{frame}
+\frametitle {Dictionary}
+\vspace{-5mm}
+\begin{center}
+\begin{table}
+	\vspace{2mm}
+\begin{tabular}{c l}
+	%\vspace{2mm}
+%\multirow{4}{*}{\centering\includegraphics[width=65mm]{./imagenes/diccionario1}} 
+\vspace{2mm}
+& $\vec{s}=\sum_{j=1}^{M}\vec{\phi}_j a_j=\vec{\Phi} \vec{a}$\\
+\vspace{2mm}
+& $\vec{s} \in \RR^N$\\
+\vspace{2mm}
+& $\vec{\Phi} \in \RR^{N \times M}$, $M\geq N$\\
+\vspace{2mm}
+& $\vec{a} \in \RR^M$\\
+\end{tabular}
+\end{table}
+\end{center}
+\vspace{1.8cm}
+\pause
+Sparse representation problem:
+\begin{itemize}
+	\item \textit{learning}.
+	\item \textit{inference}.
+\end{itemize}
+\end{frame}
+%---------------------------------------
+\subsection{Learning and inference problems}
+%---------------------------------------
+\begin{frame}
+	\frametitle {Learning and inference}
+	\begin{itemize}
+		\item Noise Overcomplete Independent Component Analysis (NOCICA)
+		\begin{equation}
+			\vec{s}=\sum_{j=1}^{M}\vec{\phi}_j a_j+\vec{\varepsilon}=\Phi \vec{a}+\vec{\varepsilon}.
+		\end{equation}
+		Then:
+		\begin{equation}
+			\Delta \vec{\Phi}= \eta \varLambda_{\varepsilon} ((\vec{s}-\vec{\Phi} \vec{a}_{MAP})\vec{a}_{MAP}^T-\vec{\Phi} H^{-1}).
+		\end{equation}
+		\pause
+		\item Orthogonal Matching Pursuit (OMP)
+		\begin{equation}
+		\text{min} {||\vec{s}-\vec{\Phi}\vec{a}||}_{2} \text{ subject to } {||\vec{a}||}_{0}\leq T,
+		\end{equation}
+		where ${||\cdot||}_{0}$ denotes the zero-norm.
+	\end{itemize}
+\end{frame}
+%---------------------------------------
+\section{MDAS method}
+%---------------------------------------
+\begin{frame}
+\frametitle {Most Discriminative Atom Selection}
+\begin{block}{}
+	\begin{center}
+		The idea behind this method is to select the most discriminative atoms of $\vec{\Phi}$ in order to improve the classifier's performance.\\
+	\end{center}
+\end{block}
+Main steps:\\
+\begin{enumerate}
+\item Compute the atom activation frequency $n_{ci}^j$ given the class $i$ and the atom $j$.\\
+\item Select the most discriminative atoms of $\vec{\Phi}$ by $D=|n_{c1}^j-n_{c2}^j|$.\\
+\end{enumerate}
+\vspace{-3mm}
+\begin{figure}
+%\includegraphics[height=3.7cm]{imagenes/abs_dif_freq_act_oad.png}
+\end{figure}
+\end{frame}
+%---------------------------------------
+\begin{frame}
+\frametitle {Most Discriminative Atom Selection}
+\begin{block}{}
+	\begin{center}
+		The idea behind this method is to select the most discriminative atoms of $\vec{\Phi}$ in order to improve the classifier's performance.\\
+	\end{center}
+\end{block}
+Substeps:
+\begin{enumerate}
+\item Improve the neural network performance.\\
+\item Obtain the optimal configuration of the classifier.\\
+\end{enumerate}
+\begin{figure}
+%	\includegraphics[height=4cm]{imagenes/MDAS_plot.png}
+\end{figure}
+\end{frame}
+%---------------------------------------
+\section{Experiments and results}
+%---------------------------------------
+\begin{frame}
+\frametitle {Database}
+Training set:
+\begin{center}
+\begin{tabular}{c c}
+\hline
+AHI & Total studies \\
+\hline
+AHI$\leq$5 & 5\\
+%\hline
+5$<$AHI$\leq$10 & 5\\
+%\hline
+10$<$AHI$\leq$15 & 5\\
+%\hline
+AHI$>$15 & 5\\
+\hline
+\end{tabular}
+\end{center}
+\pause
+Test set:
+\begin{center}
+\begin{tabular}{c c}
+\hline
+AHI & Total studies \\
+\hline
+AHI$\leq$5 & 21\\
+%\hline
+5$<$AHI$\leq$10 & 21\\
+%\hline
+10$<$AHI$\leq$15 & 21\\
+%\hline
+AHI$>$15 & 21\\
+\hline
+\end{tabular}
+\end{center}
+\end{frame}
+%---------------------------------------
+\begin{frame}
+\frametitle {AH events detection}
+\begin{figure}
+ %  \includegraphics[height=6cm]{imagenes/AHevd1.eps}
+\end{figure}
+\end{frame}
+%---------------------------------------
+\begin{frame}
+\frametitle {Scatter plots}
+\begin{figure}
+  % \includegraphics[height=4.5cm]{imagenes/scatter_plot_mdas_oad.eps}
+   %\hspace{-0mm}
+  % \includegraphics[height=4.5cm]{imagenes/scatter_plot_mdas_cd.eps}
+  \end{figure}
+\end{frame}
+%---------------------------------------
+\begin{frame}
+\frametitle {Tables of results}
+MDAS method (Multilayer perceptron):
+\begin{center}
+\begin{tabular}{c c c}
+\hline
+  & OAD & CD \\
+\hline
+Inputs & 24 & 30\\
+%\hline
+Neurons (hidden layer) & 14 & 14\\
+\hline
+\end{tabular}
+\end{center}
+\pause
+Studies:
+\begin{center}
+\begin{tabular}{c c c}
+\hline
+  & OAD & CD \\
+\hline
+Total studies & 84 & 84\\
+%\hline
+Sensibility (\%) & 74.52 & 68.86\\
+%\hline
+Specificity (\%) & 76.73 & 67.69\\
+%\hline
+Correlation (\%) & 90.04 & 74.57\\
+\hline
+\end{tabular}
+\end{center}
+\end{frame}
+%---------------------------------------
+\section{Discussion and conclusions}
+%---------------------------------------
+\begin{frame}
+\frametitle {Discussion and conclusions}
+     \vspace{-5mm}
+  \begin{itemize}
+   %\item OAD and CD dictionaries were used to obtain sparse representations of an $SaO_2$ signal.
+   %\pause
+   \item A novel methodology for detecting AH events by using only the $\text{SaO}_2$ signal was developed.
+   \pause
+   \item MDAS method selects the most discriminative atoms of $\vec{\Phi}$.   
+   \pause
+   \item A reasonable NN performance by using a subset of atoms of $\vec{\Phi}$ was obtained.
+   \pause
+   \item A considerably high AHIest-AHI correlation by using OAD was obtained.
+   \pause
+   \end{itemize}
+\end{frame}
+%---------------------------------------
+\begin{frame}
+ \frametitle{}
+ \begin{center}
+    \vspace{-5mm}
+  \begin{beamercolorbox}[center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}¡Thank you!\\
+  \end{beamercolorbox}
+  \vspace{20mm}
+  \footnotesize Contact: \emph{Román Rolon}\\
+%  \email{romanrolon@gmail.com}
+\scriptsize \texttt{rrolon@santafe-conicet.gov.ar}\\
+  \vspace{2cm}
+ % \includegraphics[scale=1.2]{imagenes/sinc}\hspace{1mm}
+ % \includegraphics[height=5.8mm]{imagenes/fichunl}\hspace{1mm}
+ % \includegraphics[height=6.2mm]{imagenes/Logo_IMAL}\hspace{1mm}\\
+ \end{center}
+\end{frame}
+%---------------------------------------
+\end{document}
+
+%%-------------------------------
+%%\section*{Recordar}
+%%\begin{frame}
+%% Especificidad: probabilidad de clasificar correctamente un individuo sano$$\frac{VN}{VN + FP}$$
+%% Sensibilidad: probabilidad de clasificar correctamente un individuo enfermo$$\frac{VP}{VP + FN}$$
+%% Curvas ROC: es una curva de la sensibilidad en función de la especifidad, que permite comparar la performance de distintos detectores.
+%%\end{frame}
+
+

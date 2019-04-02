@@ -1,0 +1,141 @@
+\documentclass[xcolor=table]{beamer}
+
+\usepackage{subfig}
+
+\usepackage{url}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, es-tabla, activeacute]{babel}
+
+\usepackage{amsmath}
+
+\usetheme[ pageofpages=of,% String used between the current page and the
+                         % total page count.
+          bullet=circle,% Use circles instead of squares for bullets.
+          titleline=true,% Show a line below the frame title.
+          alternativetitlepage=false,% Use the fancy title page.
+          titlepagelogo=unl,% Logo for the first page.
+          watermark=imagenes/agua-unl,% Watermark used in every page.
+          watermarkheight=90px,% Height of the watermark.
+          watermarkheightmult=4,% The watermark image is 4 times bigger
+                                % than watermarkheight.
+          ]{Torino}
+
+
+% Personalizacion de colores en bullets
+%\definecolor{darkred}{RGB}{161,28,47}
+\definecolor{darkorange}{RGB}{230,65,0}
+\definecolor{darkbrown}{RGB}{150,75,0}
+%\definecolor{darkblue}{RGB}{0,83,197}
+\definecolor{darkgreen}{RGB}{0,120,0}
+
+\setbeamerfont{section number projected}{%
+	family=\rmfamily,series=\bfseries,size=\normalsize}
+\setbeamercolor{section number projected}{bg=darkorange,fg=white}
+\setbeamercolor{item projected}{bg=darkorange}
+
+\setbeamercolor{title}{fg=white, bg=darkgreen}    % define infoline 1st box color
+
+% Configuro theme y color
+\usetheme[secheader]{Boadilla}
+%\usetheme{Copenhagen}
+
+\usecolortheme[named=darkgreen]{structure}
+
+\author{Francisco Yackel \and
+		\\ \hfil \\
+		Director: Dr. Leandro D. Vignolo \and 
+		\\
+		Co-Director: Ing. Leandro Ferrado}
+
+\subtitle{Desarrollo de una aplicación Android, asistida por visión artificial, para administrar imágenes almacenadas en un dispositivo móvil}
+\title{Proyecto Final de Carrera}
+
+\institute{Facultad de Ingeniería y Ciencias Hídricas, \\ Universidad Nacional del Litoral} %\\
+
+\titlegraphic{\includegraphics[height=1.2cm]{imagenes/logo-fich}}
+
+%\date{5 de Septiembre del 2016}
+
+
+
+%-----------------------------------------
+% Definición de comandos útiles
+\setbeamertemplate{navigation symbols}{}
+
+
+\makeatletter
+\setbeamertemplate{footline}
+{
+	\leavevmode%
+	\hbox{%
+		\begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}%
+			\usebeamerfont{date in head/foot}
+			FICH - UNL
+			
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+			\usebeamerfont{author in head/foot}
+			PFCII 2019
+		\end{beamercolorbox}}%
+		\begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+			\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+			\insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+		\end{beamercolorbox}%
+		\vskip0pt%
+	}
+	\makeatother
+	
+	\date[10/03/19]{\tiny 10 de Marzo del 2019}
+	
+	
+	%\AtBeginSection[]
+	%{ 
+	%	\begin{frame}
+	%		\frametitle{Agenda}
+	%		\tableofcontents[currentsection]
+	%	\end{frame}
+	%}
+
+\usepackage{xcolor}
+
+% [Agregado] Para ajustar tablas al tamaño del texto (http://tex.stackexchange.com/questions/163246/resize-a-tabular-object-to-textwidth)
+\usepackage{adjustbox}
+
+% [Agregado] Para hacer pie plots con tikzpicture: https://code.google.com/archive/p/pgf-pie/
+\usepackage{pgf-pie}
+
+
+% [Agregado] Package de maths para alinear ecuaciones
+\usepackage{amsmath}
+
+
+% [Agregado] Para hacer histogramas en Figuras
+\usepackage{xcolor}
+\usepackage{pgfplots}
+\usepackage{tikz}
+
+% [Agregado] Para resolver el problema de tener muchos paquetes cargados: http://tex.stackexchange.com/questions/38607/no-room-for-a-new-dimen
+\usepackage{etex}
+
+% [Agregado] Para hacer la tabla p/ matriz de confusion
+\usepackage{array}
+\usepackage{multirow}
+
+
+
+% Custom colors
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{bblue}{HTML}{4F81BD}
+\definecolor{rred}{HTML}{C0504D}
+\definecolor{ggreen}{HTML}{9BBB59}
+\definecolor{ppurple}{HTML}{9F4C7C}
+
+\begin{document}
+\include{slides}
+\end{document}
+

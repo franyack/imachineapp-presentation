@@ -1,0 +1,75 @@
+\documentclass[xcolor=table]{beamer}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, es-tabla, activeacute]{babel}
+
+\usetheme[ pageofpages=of,% String used between the current page and the
+                         % total page count.
+          bullet=circle,% Use circles instead of squares for bullets.
+          titleline=true,% Show a line below the frame title.
+          alternativetitlepage=false,% Use the fancy title page.
+          titlepagelogo=unl,% Logo for the first page.
+          watermark=agua-unl,% Watermark used in every page.
+          watermarkheight=90px,% Height of the watermark.
+          watermarkheightmult=4,% The watermark image is 4 times bigger
+                                % than watermarkheight.
+          ]{Torino}
+
+\author{Leandro Ferrado \and Matías Cuenca-Acuna}
+
+\subtitle{}
+\title{Filtrando eventos de seguridad en forma conservativa mediante deep learning}
+
+\urldef{\mailsa}\path|{leandro.ferrado, francisco.m.cuenca-acuna}@intel.com|
+
+\institute{Argentina Software Design Center (ASDC), Intel Security - Córdoba, Argentina\\ \mailsa} %\\
+
+
+\titlegraphic{\includegraphics[height=1cm]{Intel_McAfee_Security}}
+
+\date{5 de Septiembre del 2016}
+%-----------------------------------------
+% Definición de comandos útiles
+\setbeamertemplate{navigation symbols}{}
+
+\makeatletter
+\setbeamertemplate{footline}
+{
+	\leavevmode%
+	\hbox{%
+		\begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}%
+			\usebeamerfont{date in head/foot}
+			ASDC - Intel Security.
+			
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+			\usebeamerfont{author in head/foot}
+			ASAI 2016
+		\end{beamercolorbox}}%
+		\begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+			\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+			\insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+		\end{beamercolorbox}%
+		\vskip0pt%
+	}
+	\makeatother
+	
+	\date[05/09/16]{\tiny 5 de Septiembre del 2016}
+	
+	
+	\AtBeginSection[]
+	{
+		\begin{frame}
+			\frametitle{Contenidos:}
+			\tableofcontents[currentsection]
+		\end{frame}
+	}
+
+\usepackage{xcolor}
+
+
+\begin{document}
+\include{contenido}
+\end{document}
+

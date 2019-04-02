@@ -1,0 +1,13 @@
+\frametitle {Preguntas y respuestas}
+\begin{block}{}
+   	\usebeamerfont{title} \centering ¡Muchas gracias por su atención!\\
+\end{block}
+
+\begin{figure}[t]
+\centering
+\begin{center}
+	\includegraphics[width=0.8\textwidth]%
+	{imagenes/preguntas}
+\end{center}
+\end{figure}
+

@@ -1,0 +1,13 @@
+\beamer@sectionintoc {1}{Conceptos b\IeC {\'a}sicos}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Introducci\IeC {\'o}n}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Fundamentos te\IeC {\'o}ricos}{9}{0}{1}
+\beamer@sectionintoc {2}{IMachineApp}{19}{0}{2}
+\beamer@subsectionintoc {2}{1}{Dise\IeC {\~n}o del sistema}{19}{0}{2}
+\beamer@subsectionintoc {2}{2}{Arquitectura del sistema}{23}{0}{2}
+\beamer@subsectionintoc {2}{3}{Motor de procesamiento de las im\IeC {\'a}genes}{27}{0}{2}
+\beamer@subsectionintoc {2}{4}{Aplicaci\IeC {\'o}n Android}{43}{0}{2}
+\beamer@sectionintoc {3}{Evaluaci\IeC {\'o}n de desempe\IeC {\~n}o}{53}{0}{3}
+\beamer@subsectionintoc {3}{1}{Datos usados para la experimentaci\IeC {\'o}n}{53}{0}{3}
+\beamer@subsectionintoc {3}{2}{Protocolo de experimentaci\IeC {\'o}n}{55}{0}{3}
+\beamer@sectionintoc {4}{Conclusiones y discusi\IeC {\'o}n}{62}{0}{4}
+\babel@toc {spanish}{}

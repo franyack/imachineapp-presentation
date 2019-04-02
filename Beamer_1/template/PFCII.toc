@@ -1,0 +1,11 @@
+\beamer@sectionintoc {1}{Resumen}{3}{0}{1}
+\beamer@sectionintoc {2}{Justificaci\'on}{7}{0}{2}
+\beamer@sectionintoc {3}{Objetivos}{13}{0}{3}
+\beamer@sectionintoc {4}{Alcance}{17}{0}{4}
+\beamer@sectionintoc {5}{Metodolog\'ia}{24}{0}{5}
+\beamer@sectionintoc {6}{Cronograma}{32}{0}{6}
+\beamer@sectionintoc {7}{Riesgos}{34}{0}{7}
+\beamer@sectionintoc {8}{Recursos}{44}{0}{8}
+\beamer@sectionintoc {9}{Costos}{47}{0}{9}
+\beamer@endinputifotherversion {3.33pt}
+\select@language {spanish}
