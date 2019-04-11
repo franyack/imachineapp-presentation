@@ -5,20 +5,12 @@
 \titlepage
 \end{frame}
 
-% Actualizo subtítulo para dar un nombre más representativo a la tesis
-
-% FONSOFT:
-% FRAMEWORK DE DEEP LEARNING CON PROCESAMIENTO DISTRIBUIDO Y APLICACIÓN SOBRE ELECTROENCEFALOGRAFÍA
- 
-% MIT: 
-% Learninspy - deep learning framework for flexible modeling in a distributed way
-
 \watermarkon
 
 \begin{frame}
 	\frametitle{Agenda}
 	
-	\tableofcontents[currentsection,currentsubsection]
+	\tableofcontents[]
 \end{frame}
 \watermarkoff
 
@@ -54,64 +46,111 @@
 \begin{frame}[t,fragile]
 	\frametitle {Motivación }
 	
-	\begin{itemize}
-		\item El constante avance de las tecnologías de comunicación permite que la transmisión de información multimedia sea un aspecto común y diario para las personas que utilizan dispositivos móviles.   
-	\end{itemize}
-	\vspace{10mm}
-	\begin{figure}[t]
-		\begin{center}
-			\includegraphics[width=0.7\textwidth]%
+%	\begin{itemize}
+%		\item El constante avance de las tecnologías de comunicación permite que la transmisión de información multimedia sea un aspecto común y diario para las personas que utilizan dispositivos móviles.   
+%	\end{itemize}
+%	\vspace{10mm}
+%	\begin{tabular}{cl}  
+%	\begin{tabular}{l}
+%		\parbox{0.5\linewidth}{
+%			\begin{itemize}
+%				\item La transmisión de información multimedia es un aspecto común y diario.
+%			\end{itemize}
+%			\begin{figure}[t]
+%				\begin{center}
+%					\includegraphics[width=0.5\textwidth]%
+%					{imagenes/redes-sociales}
+%				\end{center}
+%			\end{figure}
+%			\begin{itemize}
+%				\item Las tareas llevadas a cabo para organizar las imágenes consumen mucho tiempo y esfuerzo.
+%			\end{itemize}
+%			\begin{figure}[t]
+%				\begin{center}
+%					\includegraphics[width=0.5\textwidth]%
+%					{imagenes/tareas-administracion}
+%				\end{center}
+%			\end{figure}
+%		}
+%	\end{tabular} 
+%	&
+%	\begin{tabular}{c}
+%		\includegraphics[width=5cm]{imagenes/imachineapp-logo}
+%	\end{tabular}
+%	\\
+%\end{tabular}
+\begin{itemize}
+	\item La transmisión de información multimedia es un aspecto común y diario.
+\end{itemize}
+\begin{figure}[t]
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]%
 		{imagenes/redes-sociales}
-		\end{center}
-	\end{figure}
-
+	\end{center}
+\end{figure}
+\begin{itemize}
+	\item Las tareas llevadas a cabo para organizar las imágenes consumen mucho tiempo y esfuerzo.
+\end{itemize}
+\begin{figure}[t]
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]%
+		{imagenes/tareas-administracion}
+	\end{center}
+\end{figure}
 	
 \end{frame}	
 
 %---------------------------------------
-\begin{frame}[t,fragile]
-	\frametitle {Motivación}	
-	
-	
-	\begin{itemize}
-		\item Cuando se quieren administrar los archivos de un dispositivo móvil, para liberar espacio de almacenamiento o bien al realizar una copia de seguridad, las tareas llevadas a cabo para organizar las imágenes consumen mucho tiempo y esfuerzo.
-	\end{itemize}
-	\vspace{10mm}
-	\begin{figure}[t]
-		\begin{center}
-			\includegraphics[width=1\textwidth]%
-			{imagenes/tareas-administracion}
-		\end{center}
-	\end{figure}
-
-	
-\end{frame}
-%---------------------------------------
-\begin{frame}[t,fragile]
-	\frametitle {Motivación}
-	
-	\begin{itemize}
-		\item Se consideró posible obtener una aplicación que cuente con propiedades adecuadas para lograr un agrupamiento automático de los datos tratados. En este caso: \textbf{imágenes}.
-	\end{itemize}
+%\begin{frame}[t,fragile]
+%	\frametitle {Motivación}	
+%	
+%	
+%	\begin{itemize}
+%		\item Cuando se quieren administrar los archivos de un dispositivo móvil, para liberar espacio de almacenamiento o bien al realizar una copia de seguridad, las tareas llevadas a cabo para organizar las imágenes consumen mucho tiempo y esfuerzo.
+%	\end{itemize}
 %	\vspace{10mm}
-	\begin{figure}[t]
-		\begin{center}
-			\includegraphics[width=0.4\textwidth]%
-			{imagenes/imachineapp-logo}
-		\end{center}
-	\end{figure}
-\end{frame}
+%	\begin{figure}[t]
+%		\begin{center}
+%			\includegraphics[width=1\textwidth]%
+%			{imagenes/tareas-administracion}
+%		\end{center}
+%	\end{figure}
+%
+%	
+%\end{frame}
+%---------------------------------------
+%\begin{frame}[t,fragile]
+%	\frametitle {Motivación}
+%	
+%	\begin{itemize}
+%		\item Se consideró posible obtener una aplicación que cuente con propiedades adecuadas para lograr un agrupamiento automático de los datos tratados. En este caso: \textbf{imágenes}.
+%	\end{itemize}
+%%	\vspace{10mm}
+%	\begin{figure}[t]
+%		\begin{center}
+%			\includegraphics[width=0.4\textwidth]%
+%			{imagenes/imachineapp-logo}
+%		\end{center}
+%	\end{figure}
+%\end{frame}
 
 %---------------------------------------
 \begin{frame}[t,fragile]
-	\frametitle {Objetivos}
+\frametitle {Objetivos}
 
 
-	\begin{itemize}
-		\item Desarrollar una aplicación móvil que, a partir de imágenes almacenadas en el dispositivo, sugiera una estructura de directorios para organizar el conjunto.
-		
-		\item Proveer al sistema funcionalidades que le permitan al usuario la interacción con el resultado, para desempeñar distintas tareas de administración.
-	\end{itemize}
+\begin{itemize}
+	\item Desarrollar una aplicación móvil que, a partir de imágenes almacenadas en el dispositivo, sugiera una estructura de directorios para organizar el conjunto.
+	
+	\item Proveer al sistema funcionalidades que le permitan al usuario la interacción con el resultado, para desempeñar distintas tareas de administración.
+\end{itemize}
+
+\begin{figure}[t]
+	\begin{center}
+		\includegraphics[width=0.3\textwidth]%
+		{imagenes/imachineapp-logo}
+	\end{center}
+\end{figure}
 	
 	%En este proyecto se plantea como objetivo general el desarrollo de un framework que ofrezca la posibilidad de entrenar redes neuronales mediante los algoritmos y funcionalidades más populares del aprendizaje profundo, y reducir el esfuerzo de diseño y modelado utilizando herramientas de cómputo en paralelo. Esto último implica poder distribuir el trabajo computacional tanto a nivel local sobre los núcleos de un procesador, como también sobre los nodos que componen un clúster. Además se define como un objetivo específico evaluar la potencialidad del software desarrollado mediante su aplicación en tareas de alta complejidad, particularmente en problemas de clasificación sobre datos de electroencefalografía.
 	
@@ -136,9 +175,11 @@
 \begin{itemize}
 	\item Desarrollar de manera \textbf{nativa} la aplicación para el sistema operativo Android.
 	\vspace{2mm}
-	\item Implementar el algoritmo de procesamiento y extracción de características \textbf{on premise}, lo que significa la no necesidad de establecer una conexión a Internet para poder explotar sus funcionalidades, sino usar exclusivamente los recursos del dispositivo.
+	\item Implementar el algoritmo de procesamiento y extracción de características \textbf{on premise}.
 	\vspace{2mm}
-	\item Asistir al usuario, brindando \textbf{herramientas de administración} para que pueda interactuar con el resultado de organización de las imágenes propuesto por el motor de procesamiento.
+	\item Asistir al usuario, brindando \textbf{herramientas de administración} para que pueda interactuar con el resultado.
+	\vspace{2mm}
+	\item Procesar un total de \textbf{400 imágenes} en simultaneo.
 \end{itemize}
 
 
@@ -163,66 +204,72 @@
 	\begin{block}{}
 		\textit{Abarca algoritmos y técnicas para construir sistemas que son capaces de aprender a partir de datos y a realizar diversos tipos de tareas, sin requerir que se les indique \textbf{cómo} hacerlas.}
 	\end{block}
+	\vspace{10mm}
+	\begin{figure}[t]
+		\begin{center}
+			\includegraphics[width=0.6\textwidth]%
+			{imagenes/machinelearningnewparadigm}
+		\end{center}
+	\end{figure}
 	
-%	\begin{itemize}
-%	\item Los sistemas por lo general siguen dos tipos de aprendizaje: \color{red}{supervisado}, \color{black} y 
-%	\color{blue}no supervisado\color{black}.
-%	
-%	\item Las tareas a realizar suelen clasificarse en estas categorías: 
-%
-%	\begin{enumerate}[a)]
-%		\color{red} % SUPERVISADO
-%		\item Clasificación
-%		\item Regresión
-%		
-%		\color{blue} % NO SUPERVISADO
-%		\item Clustering
-%	\end{enumerate}
-%	
-%	\item Casos de aplicación: DEFINIR COMO EJEMPLOS
-%	\begin{itemize}
-%		\item Visión computacional
-%		\item Motores de búsqueda
-%		\item Reconocimiento de voz
-%	\end{itemize}
-%\end{itemize}
-	
-	\begin{tabular}{cl}  
-		\begin{tabular}{l}
-			\parbox{0.5\linewidth}{
-				\begin{itemize}
-					\item Los sistemas por lo general siguen dos tipos de aprendizaje: \color{red}{supervisado}, \color{black} y 
-					\color{blue}no supervisado\color{black}.
-					
-				\item Las tareas a realizar suelen clasificarse en estas categorías: 
-				
-				\begin{enumerate}[a)]
-					\color{red} % SUPERVISADO
-					\item Clasificación
-					\item Regresión
-					
-					\color{blue} % NO SUPERVISADO
-					\item Clustering
-				\end{enumerate}
-					
-%				\item Casos de aplicación: DEFINIR COMO EJEMPLOS
-%					\begin{itemize}
-%						\item Visión computacional
-%						\item Motores de búsqueda
-%						\item Reconocimiento de voz
-%					\end{itemize}
-				\end{itemize}
-			}
-		\end{tabular} 
-		&
-		\begin{tabular}{c}
-			\includegraphics[width=5cm]{imagenes/machinelearningnewparadigm}
-		\end{tabular}
-		\\
-	\end{tabular}
+%	\begin{tabular}{cl}  
+%		\begin{tabular}{l}
+%			\parbox{0.5\linewidth}{
+%				\begin{itemize}
+%					\item Los sistemas por lo general siguen dos tipos de aprendizaje: \color{red}{supervisado} \color{black} y 
+%					\color{blue}no supervisado\color{black}.
+%					
+%				\item Las tareas a realizar suelen clasificarse en estas categorías: 
+%				
+%				\begin{itemize}
+%					\color{red} % SUPERVISADO
+%					\item Clasificación
+%					\item Regresión
+%					
+%					\color{blue} % NO SUPERVISADO
+%					\item Clustering
+%				\end{itemize}
+%					
+%%				\item Casos de aplicación: DEFINIR COMO EJEMPLOS
+%%					\begin{itemize}
+%%						\item Visión computacional
+%%						\item Motores de búsqueda
+%%						\item Reconocimiento de voz
+%%					\end{itemize}
+%				\end{itemize}
+%			}
+%		\end{tabular} 
+%		&
+%		\begin{tabular}{c}
+%			\includegraphics[width=5cm]{imagenes/machinelearningnewparadigm}
+%		\end{tabular}
+%		\\
+%	\end{tabular}
 	
 \end{frame}	
+%---------------------------------------
+\begin{frame}[t,fragile]
+\frametitle {Machine learning}
 
+\begin{itemize}
+	\item Los sistemas por lo general siguen dos tipos de aprendizaje: \color{red}{supervisado} \color{black} y 
+	\color{blue}no supervisado\color{black}.
+
+	\vspace{5mm}	
+	\item Las tareas a realizar suelen clasificarse en estas categorías: 
+	\begin{itemize}
+		\color{red} % SUPERVISADO
+		\item Clasificación
+		\item Regresión
+		
+		\color{blue} % NO SUPERVISADO
+		\item Clustering
+	\end{itemize}
+	
+\end{itemize}
+
+
+\end{frame}	
 %---------------------------------------
 \begin{frame}[t,fragile]
 \frametitle {Visión artificial}	
@@ -242,19 +289,19 @@
 %---------------------------------------
 
 %---------------------------------------
-\begin{frame}[t,fragile]
-\frametitle {Antecedentes - Gatos en Youtube}	
-
-
-\begin{figure}[t]
-	\begin{center}
-		\includegraphics[width=0.7\textwidth]%
-		{imagenes/cats-youtube}
-	\end{center}
-\end{figure}
-
-
-\end{frame}
+%\begin{frame}[t,fragile]
+%\frametitle {Antecedentes - Gatos en Youtube}	
+%
+%
+%\begin{figure}[t]
+%	\begin{center}
+%		\includegraphics[width=0.7\textwidth]%
+%		{imagenes/cats-youtube}
+%	\end{center}
+%\end{figure}
+%
+%
+%\end{frame}
 %---------------------------------------
 
 %---------------------------------------
@@ -283,8 +330,11 @@
 	
 	\begin{figure}[t]
 	\begin{center}
-		\includegraphics[width=0.4\textwidth]%
-		{imagenes/ai-ml-dl}
+%		\includegraphics[width=0.4\textwidth]%
+%		{imagenes/ai-ml-dl}
+%		\vspace{2mm}
+		\includegraphics[width=0.55\textwidth]%
+		{imagenes/Why-Deep-Learning2}
 	\end{center}
 \end{figure}
 	
@@ -295,10 +345,11 @@
 \begin{frame}[t,fragile]
 \frametitle {Deep Learning - Visión Computacional}	
 
+Red Neuronal Convolucional (\textbf{CNN}):
 
 \begin{figure}[t]
 	\begin{center}
-		\includegraphics[width=1\textwidth]%
+		\includegraphics[width=0.8\textwidth]%
 		{imagenes/deep-learning-model}
 	\end{center}
 \end{figure}
@@ -421,22 +472,22 @@
 	\vspace{4mm}
 	\item Procesamiento de las imágenes a través del motor.
 	\vspace{4mm}
-	\item Administración del resultado arrojado por el procesamiento.
+	\item Agrupamiento de las imágenes procesadas.
 	\vspace{4mm}
-	\item Administración del resultado final.
+	\item Administración del resultado.
 \end{enumerate}
 
 \end{frame}	
 %---------------------------------------
-\begin{frame}[t,fragile]
-\frametitle {Diagrama de casos de uso}
-\begin{figure}[t]
-	\begin{center}
-		\includegraphics[width=0.8\textwidth]%
-		{imagenes/casosdeusoImachineApp}
-	\end{center}
-\end{figure}
-\end{frame}	
+%\begin{frame}[t,fragile]
+%\frametitle {Diagrama de casos de uso}
+%\begin{figure}[t]
+%	\begin{center}
+%		\includegraphics[width=0.8\textwidth]%
+%		{imagenes/casosdeusoImachineApp}
+%	\end{center}
+%\end{figure}
+%\end{frame}	
 %--------------------------------------- 
 \subsection{Arquitectura del sistema}
 %---------------------------------------
@@ -452,47 +503,66 @@
 %---------------------------------------
 \begin{frame}[t,fragile]
 \frametitle {Arquitectura del sistema}
+
+%La aplicación se desarrolló siguiendo el patrón de programación MVP: 
+%\begin{center}
+%	\textbf{Modelo-Vista-Presentador}
+%\end{center} 
+%
+%\begin{itemize}
+%	\item \textbf{Modelo:} responsable de todo lo que corresponde a la lógica de negocio de la aplicación.
+%	\vspace{3mm}
+%	\item \textbf{Vista:} presenta las vistas al usuario e interactúa con el mismo.
+%	\vspace{3mm}
+%	\item \textbf{Presentador:} es un puente que conecta al modelo con la vista. Además, actúa como instructor para la vista.
+%\end{itemize}
+La aplicación se desarrolló siguiendo el patrón de programación MVP: 
+\begin{center}
+	\textbf{\underline{Modelo-Vista-Presentador}}
+\end{center} 
+\begin{tabular}{cl}  
+	\begin{tabular}{l}
+		\parbox{0.5\linewidth}{
+			\begin{itemize}
+				\item \textbf{Modelo:} responsable de la lógica de negocio.
+				\vspace{3mm}
+				\item \textbf{Vista:} presenta las vistas al usuario e interactúa con el mismo.
+				\vspace{3mm}
+				\item \textbf{Presentador:} puente que conecta al modelo con la vista. Además, actúa como instructor para la vista.
+			\end{itemize}
+		}
+	\end{tabular} 
+	&
+	\begin{tabular}{c}
+		\includegraphics[width=5cm]{imagenes/mvp-basic}
+	\end{tabular}
+	\\
+\end{tabular}
+
+\end{frame}	
+%--------------------------------------- 
+\begin{frame}[t,fragile]
+\frametitle {MVP: Justificación}
+
 \begin{itemize}
 	\item Android no recomienda ninguna forma específica de diseñar u organizar la implementación de aplicaciones.
+	\vspace{7mm}
 	\item No es una buena práctica cargar de lógica a las actividades que se encargan de interactuar	con el usuario.
+	\vspace{7mm}
 	\item Deberían ser clases por las cuales simplemente la información que interactúa entre el sistema y el usuario fluye, desligándose de cualquier tipo de lógica de negocio.
 \end{itemize}
 
-\vspace{5mm}
-
-La aplicación se desarrolló siguiendo el patrón de programación MVP: 
-
-\begin{center}
-	\textbf{Modelo-Vista-Presentador}
-\end{center} 
-
 \end{frame}	
 %--------------------------------------- 
-\begin{frame}[t,fragile]
-\frametitle {MVP}
-
-Divide a la aplicación en tres componentes básicos:
-
-\begin{itemize}
-	\item \textbf{Modelo:} es el responsable de manejar todo lo que corresponde a la lógica de negocio de la aplicación, procesando la información y tomando decisiones.
-	\vspace{3mm}
-	\item \textbf{Vista:} presenta las vistas al usuario e interactúa con el mismo.
-	\vspace{3mm}
-	\item \textbf{Presentador:} es un puente que conecta al modelo con la vista. Además, actúa como instructor para la vista.
-\end{itemize}
-
-\end{frame}	
-%--------------------------------------- 
-\begin{frame}[t,fragile]
-\frametitle {MVP: IMachineApp}
-\begin{figure}[t]
-	\begin{center}
-		\includegraphics[width=0.8\textwidth]%
-		{imagenes/mvp-imachineapp}
-	\end{center}
-\end{figure}
-\end{frame}	
-%--------------------------------------- 
+%\begin{frame}[t,fragile]
+%\frametitle {MVP: IMachineApp}
+%\begin{figure}[t]
+%	\begin{center}
+%		\includegraphics[width=0.8\textwidth]%
+%		{imagenes/mvp-imachineapp}
+%	\end{center}
+%\end{figure}
+%\end{frame}	 
 %--------------------------------------- 
 \subsection{Motor de procesamiento de las imágenes}
 %---------------------------------------
@@ -518,7 +588,7 @@ Divide a la aplicación en tres componentes básicos:
 	\vspace{3mm}
 	\item Posible adaptación a otros ambientes:
 	\begin{itemize}
-		\item Pograma escritorio.
+		\item Programa escritorio.
 		\item Servicio alojado en la nube.
 		\item Aplicación nativa en otros sistemas operativos utilizados en dispositivos móviles.
 	\end{itemize}
@@ -541,10 +611,11 @@ Divide a la aplicación en tres componentes básicos:
 				\item Se utilizó un modelo de \textbf{CNN} denominado MobileNet:
 				\vspace{3mm}
 				\begin{itemize}
-					\item Se encuentran preparados y optimizados para ser utilizadas en dispositivos móviles.
-					\item Pueden descargarse con sus pesos sinópticos entrenados.
+					\item Se encuentra preparado y optimizado para ser utilizado en dispositivos móviles.
 					\vspace{2mm}
-					\item Pueden ser adaptados según la necesidad del proyecto. 
+					\item Puede descargarse una versión pre-entrenada.
+					\vspace{2mm}
+					\item Puede ser adaptado según la necesidad del proyecto. 
 					\vspace{2mm}
 					\item El tamaño final de la red utilizada es de 16.9MB.
 				\end{itemize}
@@ -565,10 +636,10 @@ Divide a la aplicación en tres componentes básicos:
 \end{frame}
 %---------------------------------------
 \begin{frame}[t,fragile]
-\frametitle {MobieNet}
+\frametitle {MobileNet}
 \begin{itemize}
 	\item Fue entrenada con 1001 grupos pertenecientes a la base de datos \textbf{ImageNet}.
-	\item A partir de una imagen de entrada, devuelve el grado de similitud que tiene con los 1001 grupos con los que cuenta la red.
+	\item A partir de una imagen de entrada, devuelve la probabilidad de que la imagen pertenezca a alguna de las 1001 clases conocidas.
 \end{itemize}
 \begin{figure}[t]
 	\begin{center}
@@ -579,7 +650,7 @@ Divide a la aplicación en tres componentes básicos:
 \end{frame}
 %---------------------------------------
 \begin{frame}[t,fragile]
-\frametitle {MobieNet}
+\frametitle {MobileNet}
 \begin{itemize}
 	\item Dichos grupos están organizados acorde a una jerarquía de etiquetas, provenientes de una base de datos llamada \textbf{WordNet}.
 	\item Jerarquía: parten desde una madre o genérica, hacia el detalle en concreto.
@@ -593,7 +664,7 @@ Divide a la aplicación en tres componentes básicos:
 \end{frame}
 %---------------------------------------
 \begin{frame}[t,fragile]
-\frametitle {Etapa 1: Pre-procesamiento y extracción de característica}
+\frametitle {Etapa 1: Pre-procesamiento y extracción de características}
 \begin{figure}[t]
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]%
@@ -619,23 +690,23 @@ Para todas las imágenes:
 \end{frame}
 
 %---------------------------------------
-\begin{frame}[t,fragile]
-\frametitle {Etapa 1: Pre-procesamiento y extracción de característica}
-\begin{figure}[t]
-	\begin{center}
-		\includegraphics[width=0.8\textwidth]%
-		{imagenes/ciengine-paso1}
-	\end{center}
-\end{figure}
-\end{frame}
+%\begin{frame}[t,fragile]
+%\frametitle {Etapa 1: Pre-procesamiento y extracción de características}
+%\begin{figure}[t]
+%	\begin{center}
+%		\includegraphics[width=0.8\textwidth]%
+%		{imagenes/ciengine-paso1}
+%	\end{center}
+%\end{figure}
+%\end{frame}
 %---------------------------------------
 \begin{frame}[t,fragile]
 \frametitle {Resultado 1: etiquetas y probabilidades}
 Por cada imagen:
 \begin{enumerate}
-	\item Se obtiene una lista de las 5 (o menos) etiquetas cuyas probabilidades fueron las más altas.
+	\item Se obtiene una lista de hasta 5 etiquetas cuyas probabilidades fueron las más altas.
 	\vspace{2mm}
-	\item Por cada una de ellas se obtienen las 4 etiquetas ``padres'' según \textbf{WordNet}, asignándole la misma probabilidad que la ``hija''.
+	\item Por cada una de ellas se obtienen hasta 4 etiquetas ``padres'' según \textbf{WordNet}, asignándole la misma probabilidad que la ``hija''.
 \end{enumerate}
 \begin{figure}[t]
 	\begin{center}
@@ -668,11 +739,13 @@ Por cada imagen:
 %---------------------------------------
 \begin{frame}[t,fragile]
 \frametitle {Resultado final de la etapa 1}
-\vspace{14mm}
+\vspace{12mm}
 \begin{block}{}
-	Por cada imagen: 
+	Por cada imagen se obtiene: 
+	\vspace{2mm}
 	\begin{itemize}
-		\item Se obtiene un conjunto de etiquetas y probabilidades.
+		\item Un conjunto de etiquetas y probabilidades.
+		\vspace{1.5mm}
 		\item Un vector caracterizador.
 	\end{itemize}
 \end{block}
@@ -782,93 +855,104 @@ Debido al origen de muchos grupos con 1 sola imagen, por cada una de ellas:
 \end{frame}
 \watermarkoff
 
-\begin{frame}[t,fragile]
-\frametitle {Flujo principal}
-Pantalla inicial:
-\begin{figure}[t]
-	\begin{center}
-		\includegraphics[width=0.3\textwidth]%
-		{imagenes/imachineapp1}
-	\end{center}
-\end{figure}
-\end{frame}
+%\begin{frame}[t,fragile]
+%\frametitle {Flujo principal}
+%Pantalla inicial:
+%\begin{figure}[t]
+%	\begin{center}
+%		\includegraphics[width=0.3\textwidth]%
+%		{imagenes/imachineapp1}
+%	\end{center}
+%\end{figure}
+%\end{frame}
+%%---------------------------------------
+%\begin{frame}[t,fragile]
+%\frametitle {Flujo principal}
+%Selección de carpeta/s a procesar:
+%\begin{figure}[t]
+%	\begin{center}
+%		\includegraphics[width=0.3\textwidth]%
+%		{imagenes/imachineapp2}
+%		\includegraphics[width=0.3\textwidth]%
+%		{imagenes/imachineapp3}
+%		\includegraphics[width=0.3\textwidth]%
+%		{imagenes/imachineapp4}
+%	\end{center}
+%\end{figure}
+%\end{frame}
+%%---------------------------------------
+%\begin{frame}[t,fragile]
+%\frametitle {Flujo principal}
+%Procesamiento de las imágenes:
+%\begin{figure}[t]
+%	\begin{center}
+%		\includegraphics[width=0.3\textwidth]%
+%		{imagenes/imachineapp5}
+%	\end{center}
+%\end{figure}
+%\end{frame}
+%%---------------------------------------
+%\begin{frame}[t,fragile]
+%\frametitle {Flujo principal}
+%Administración de las carpetas resultantes: 
+%\begin{figure}[t]
+%	\begin{center}
+%		\includegraphics[width=0.3\textwidth]%
+%		{imagenes/imachineapp6}
+%		\includegraphics[width=0.3\textwidth]%
+%		{imagenes/imachineapp7}
+%		\includegraphics[width=0.3\textwidth]%
+%		{imagenes/imachineapp8}
+%	\end{center}
+%\end{figure}
+%\end{frame}
+%%---------------------------------------
+%\begin{frame}[t,fragile]
+%\frametitle {Flujo principal}
+%Administración de las imágenes: 
+%\begin{figure}[t]
+%	\begin{center}
+%		\includegraphics[width=0.3\textwidth]%
+%		{imagenes/imachineapp9}
+%		\includegraphics[width=0.3\textwidth]%
+%		{imagenes/imachineapp10}
+%		\includegraphics[width=0.3\textwidth]%
+%		{imagenes/imachineapp11}
+%	\end{center}
+%\end{figure}
+%\end{frame}
+%%---------------------------------------
+%\begin{frame}[t,fragile]
+%\frametitle {Flujo principal}
+%Finalizar la edición: 
+%\begin{figure}[t]
+%	\begin{center}
+%		\includegraphics[width=0.3\textwidth]%
+%		{imagenes/imachineapp12}
+%	\end{center}
+%\end{figure}
+%\end{frame}
+%%---------------------------------------
+%\begin{frame}[t,fragile]
+%\frametitle {Flujo principal}
+%Administración del resultado: 
+%\begin{figure}[t]
+%	\begin{center}
+%		\includegraphics[width=0.3\textwidth]%
+%		{imagenes/imachineapp13}
+%		\includegraphics[width=0.3\textwidth]%
+%		{imagenes/imachineapp14}
+%	\end{center}
+%\end{figure}
+%\end{frame}
 %---------------------------------------
 \begin{frame}[t,fragile]
-\frametitle {Flujo principal}
-Selección de carpeta/s a procesar:
+\frametitle {Demo - Ejemplo de uso}
 \begin{figure}[t]
+	\centering
 	\begin{center}
-		\includegraphics[width=0.3\textwidth]%
-		{imagenes/imachineapp2}
-		\includegraphics[width=0.3\textwidth]%
-		{imagenes/imachineapp3}
-		\includegraphics[width=0.3\textwidth]%
-		{imagenes/imachineapp4}
-	\end{center}
-\end{figure}
-\end{frame}
-%---------------------------------------
-\begin{frame}[t,fragile]
-\frametitle {Flujo principal}
-Procesamiento de las imágenes:
-\begin{figure}[t]
-	\begin{center}
-		\includegraphics[width=0.3\textwidth]%
-		{imagenes/imachineapp5}
-	\end{center}
-\end{figure}
-\end{frame}
-%---------------------------------------
-\begin{frame}[t,fragile]
-\frametitle {Flujo principal}
-Administración de las carpetas resultantes: 
-\begin{figure}[t]
-	\begin{center}
-		\includegraphics[width=0.3\textwidth]%
-		{imagenes/imachineapp6}
-		\includegraphics[width=0.3\textwidth]%
-		{imagenes/imachineapp7}
-		\includegraphics[width=0.3\textwidth]%
-		{imagenes/imachineapp8}
-	\end{center}
-\end{figure}
-\end{frame}
-%---------------------------------------
-\begin{frame}[t,fragile]
-\frametitle {Flujo principal}
-Administración de las imágenes: 
-\begin{figure}[t]
-	\begin{center}
-		\includegraphics[width=0.3\textwidth]%
-		{imagenes/imachineapp9}
-		\includegraphics[width=0.3\textwidth]%
-		{imagenes/imachineapp10}
-		\includegraphics[width=0.3\textwidth]%
-		{imagenes/imachineapp11}
-	\end{center}
-\end{figure}
-\end{frame}
-%---------------------------------------
-\begin{frame}[t,fragile]
-\frametitle {Flujo principal}
-Finalizar la edición: 
-\begin{figure}[t]
-	\begin{center}
-		\includegraphics[width=0.3\textwidth]%
-		{imagenes/imachineapp12}
-	\end{center}
-\end{figure}
-\end{frame}
-%---------------------------------------
-\begin{frame}[t,fragile]
-\frametitle {Flujo principal}
-Administración del resultado: 
-\begin{figure}[t]
-	\begin{center}
-		\includegraphics[width=0.3\textwidth]%
-		{imagenes/imachineapp13}
-		\includegraphics[width=0.3\textwidth]%
-		{imagenes/imachineapp14}
+		\includegraphics[width=0.4\textwidth]%
+		{imagenes/demotime2}
 	\end{center}
 \end{figure}
 \end{frame}
@@ -895,17 +979,6 @@ Administración del resultado:
 	\end{tabular}
 	\\
 \end{tabular}
-\end{frame}
-%---------------------------------------
-\begin{frame}[t,fragile]
-\frametitle {Demo - Ejemplo de uso}
-\begin{figure}[t]
-	\centering
-	\begin{center}
-		\includegraphics[width=0.4\textwidth]%
-		{imagenes/demotime2}
-	\end{center}
-\end{figure}
 \end{frame}
 %--------------------------------------- 
 \section{Evaluación de desempeño}
@@ -1179,17 +1252,17 @@ Se utilizaron 184 imágenes distribuidas en 6 clases diferentes:
 Se consideran las siguientes cuestiones a mejorar en un futuro:
 
 \begin{itemize}
-	\item Incorporación de nuevas características que ayuden a describir mejor las imágenes.
+	\item Incorporar nuevas características para describir mejor las imágenes.
+	\vspace{4mm}
+	\item Estudiar metodologías para aumentar el número de imágenes a procesar a la vez.
+	\vspace{4mm}
+	\item Reducir el consumo de almacenamiento y memoria.
+	\vspace{4mm}
+	\item Dar un nombre representativo a cada carpeta.
+	\vspace{4mm}
+%	\item Aumentar la cantidad de pruebas unitarias.
 	
-	\item Estudiar metodologías para poder aumentar el número de imágenes a procesar a la vez.
-	
-	\item Reducir el consumo de almacenamiento y memoria durante el procesamiento de las imágenes.
-	
-	\item Darle un nombre representativo a cada carpeta, basándose en la etiqueta con más concurrencia.
-	
-	\item Aumentar la cantidad de pruebas unitarias.
-	
-	\item Implementar un proceso de integración continua.
+%	\item Implementar un proceso de integración continua.
 	
 	\item Extender el uso del motor de procesamiento hacia otras plataformas (e.g Desktop, iOS, Cloud)
 \end{itemize}
@@ -1197,7 +1270,7 @@ Se consideran las siguientes cuestiones a mejorar en un futuro:
 
 %---------------------------------------
 \begin{frame}[t,fragile]
-\frametitle {Preguntas y respuestas}
+\frametitle {Preguntas}
 \begin{block}{}
    	\usebeamerfont{title} \centering ¡Muchas gracias por su atención!\\
 \end{block}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.13)  2 APR 2019 16:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.13)  11 APR 2019 20:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1550,7 +1550,7 @@ LaTeX Info: Redefining \% on input line 13.
 <imagenes/agua-unl.png, id=93, 257.96375pt x 257.96375pt>
 File: imagenes/agua-unl.png Graphic file (type png)
 <use imagenes/agua-unl.png>
-Package pdftex.def Info: imagenes/agua-unl.png  used on input line 22.
+Package pdftex.def Info: imagenes/agua-unl.png  used on input line 14.
 (pdftex.def)             Requested size: 90.33589pt x 90.33783pt.
  [2
 
@@ -1561,7 +1561,7 @@ LaTeX Info: Redefining \% on input line 13.
 )
 File: imagenes/agua-unl.png Graphic file (type png)
 <use imagenes/agua-unl.png>
-Package pdftex.def Info: imagenes/agua-unl.png  used on input line 49.
+Package pdftex.def Info: imagenes/agua-unl.png  used on input line 41.
 (pdftex.def)             Requested size: 90.33589pt x 90.33783pt.
  [3
 
@@ -1572,43 +1572,32 @@ Package pdftex.def Info: imagenes/agua-unl.png  used on input line 49.
 <imagenes/redes-sociales.png, id=133, 658.46pt x 125.46875pt>
 File: imagenes/redes-sociales.png Graphic file (type png)
 <use imagenes/redes-sociales.png>
-Package pdftex.def Info: imagenes/redes-sociales.png  used on input line 10.
-(pdftex.def)             Requested size: 239.60567pt x 45.6569pt.
-) [4
-
- <./imagenes/redes-sociales.png>]
-\openout4 = `main.vrb'.
-
- (./main.vrb
-<imagenes/tareas-administracion.png, id=142, 634.37pt x 112.42pt>
+Package pdftex.def Info: imagenes/redes-sociales.png  used on input line 42.
+(pdftex.def)             Requested size: 171.14764pt x 32.61153pt.
+<imagenes/tareas-administracion.png, id=134, 634.37pt x 112.42pt>
 File: imagenes/tareas-administracion.png Graphic file (type png)
 <use imagenes/tareas-administracion.png>
 Package pdftex.def Info: imagenes/tareas-administracion.png  used on input line
- 11.
-(pdftex.def)             Requested size: 342.2953pt x 60.66129pt.
-)
-[5
+ 51.
+(pdftex.def)             Requested size: 171.14764pt x 30.32979pt.
+) [4
 
- <./imagenes/tareas-administracion.png>]
+ <./imagenes/redes-sociales.png> <./imagenes/tareas-administracion.png>]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<imagenes/imachineapp-logo.png, id=151, 109.8504pt x 89.3739pt>
+<imagenes/imachineapp-logo.png, id=144, 109.8504pt x 89.3739pt>
 File: imagenes/imachineapp-logo.png Graphic file (type png)
 <use imagenes/imachineapp-logo.png>
-Package pdftex.def Info: imagenes/imachineapp-logo.png  used on input line 10.
-(pdftex.def)             Requested size: 136.91603pt x 111.4007pt.
-) [6
+Package pdftex.def Info: imagenes/imachineapp-logo.png  used on input line 13.
+(pdftex.def)             Requested size: 102.68962pt x 83.55188pt.
+) [5
 
  <./imagenes/imachineapp-logo.png>]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [7
 
-]
-\openout4 = `main.vrb'.
-
- (./main.vrb) [8
+(./main.vrb) [6
 
 ] (./main.toc
 LaTeX Info: Redefining \. on input line 13.
@@ -1616,9 +1605,9 @@ LaTeX Info: Redefining \% on input line 13.
 )
 File: imagenes/agua-unl.png Graphic file (type png)
 <use imagenes/agua-unl.png>
-Package pdftex.def Info: imagenes/agua-unl.png  used on input line 156.
+Package pdftex.def Info: imagenes/agua-unl.png  used on input line 197.
 (pdftex.def)             Requested size: 90.33589pt x 90.33783pt.
- [9
+ [7
 
 ]
 \openout4 = `main.vrb'.
@@ -1628,130 +1617,119 @@ Package pdftex.def Info: imagenes/agua-unl.png  used on input line 156.
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 4.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 30.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 30.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 30.
-
-(/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
-thkerncmss.
-)
-<imagenes/machinelearningnewparadigm.png, id=195, 375.4025pt x 141.52875pt>
+<imagenes/machinelearningnewparadigm.png, id=181, 375.4025pt x 141.52875pt>
 File: imagenes/machinelearningnewparadigm.png Graphic file (type png)
 <use imagenes/machinelearningnewparadigm.png>
 Package pdftex.def Info: imagenes/machinelearningnewparadigm.png  used on input
- line 59.
-(pdftex.def)             Requested size: 142.26378pt x 53.63463pt.
-
-Overfull \hbox (19.11612pt too wide) in paragraph at lines 30--63
-[][]  
- []
-
-) [10
+ line 10.
+(pdftex.def)             Requested size: 205.37926pt x 77.43073pt.
+) [8
 
  <./imagenes/machinelearningnewparadigm.png>]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<imagenes/computer_vision.jpg, id=205, 343.2825pt x 256.96pt>
+LaTeX Font Info:    Try loading font information for U+msa on input line 11.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 11.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
+line 11.
+
+(/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
+thkerncmss.
+))
+[9
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+<imagenes/computer_vision.jpg, id=199, 343.2825pt x 256.96pt>
 File: imagenes/computer_vision.jpg Graphic file (type jpg)
 <use imagenes/computer_vision.jpg>
 Package pdftex.def Info: imagenes/computer_vision.jpg  used on input line 10.
 (pdftex.def)             Requested size: 136.91603pt x 102.48418pt.
-) [11
+) [10
 
  <./imagenes/computer_vision.jpg>]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<imagenes/cats-youtube.png, id=213, 800.9925pt x 307.1475pt>
-File: imagenes/cats-youtube.png Graphic file (type png)
-<use imagenes/cats-youtube.png>
-Package pdftex.def Info: imagenes/cats-youtube.png  used on input line 7.
-(pdftex.def)             Requested size: 239.60567pt x 91.8778pt.
-) [12
-
- <./imagenes/cats-youtube.png (PNG copy)>]
-\openout4 = `main.vrb'.
-
- (./main.vrb
-<imagenes/googlephotos.png, id=221, 797.98125pt x 533.995pt>
+<imagenes/googlephotos.png, id=207, 797.98125pt x 533.995pt>
 File: imagenes/googlephotos.png Graphic file (type png)
 <use imagenes/googlephotos.png>
 Package pdftex.def Info: imagenes/googlephotos.png  used on input line 7.
 (pdftex.def)             Requested size: 239.60567pt x 160.33824pt.
-) [13
+) [11
 
  <./imagenes/googlephotos.png>]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<imagenes/ai-ml-dl.png, id=231, 1124.2pt x 1119.18124pt>
-File: imagenes/ai-ml-dl.png Graphic file (type png)
-<use imagenes/ai-ml-dl.png>
-Package pdftex.def Info: imagenes/ai-ml-dl.png  used on input line 10.
-(pdftex.def)             Requested size: 136.91603pt x 136.29399pt.
-) [14
+<imagenes/Why-Deep-Learning2.png, id=216, 811.03pt x 528.97626pt>
+File: imagenes/Why-Deep-Learning2.png Graphic file (type png)
+<use imagenes/Why-Deep-Learning2.png>
+Package pdftex.def Info: imagenes/Why-Deep-Learning2.png  used on input line 13
+.
+(pdftex.def)             Requested size: 188.26346pt x 122.79199pt.
+) [12
 
- <./imagenes/ai-ml-dl.png>]
+ <./imagenes/Why-Deep-Learning2.png>]
 \openout4 = `main.vrb'.
 
- (./main.vrb
-<imagenes/deep-learning-model.png, id=240, 1385.175pt x 819.06pt>
+
+(./main.vrb
+<imagenes/deep-learning-model.png, id=225, 1385.175pt x 819.06pt>
 File: imagenes/deep-learning-model.png Graphic file (type png)
 <use imagenes/deep-learning-model.png>
-Package pdftex.def Info: imagenes/deep-learning-model.png  used on input line 7
+Package pdftex.def Info: imagenes/deep-learning-model.png  used on input line 8
 .
-(pdftex.def)             Requested size: 342.2953pt x 202.4024pt.
-)
-Overfull \vbox (10.41707pt too high) detected at line 306
- []
-
-[15
+(pdftex.def)             Requested size: 273.83728pt x 161.92192pt.
+) [13
 
  <./imagenes/deep-learning-model.png>]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<imagenes/clustering.png, id=249, 352.31625pt x 292.09125pt>
+<imagenes/clustering.png, id=235, 352.31625pt x 292.09125pt>
 File: imagenes/clustering.png Graphic file (type png)
 <use imagenes/clustering.png>
 Package pdftex.def Info: imagenes/clustering.png  used on input line 8.
 (pdftex.def)             Requested size: 171.14764pt x 141.89137pt.
 )
-Overfull \vbox (4.86937pt too high) detected at line 322
+Overfull \vbox (4.86937pt too high) detected at line 373
  []
 
-[16
+[14
 
  <./imagenes/clustering.png>]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<imagenes/cluster-graph.png, id=259, 361.35pt x 361.35pt>
+<imagenes/cluster-graph.png, id=245, 361.35pt x 361.35pt>
 File: imagenes/cluster-graph.png Graphic file (type png)
 <use imagenes/cluster-graph.png>
 Package pdftex.def Info: imagenes/cluster-graph.png  used on input line 8.
 (pdftex.def)             Requested size: 171.14764pt x 171.14679pt.
 )
-Overfull \vbox (20.52478pt too high) detected at line 339
+Overfull \vbox (20.52478pt too high) detected at line 390
  []
 
-[17
+[15
 
  <./imagenes/cluster-graph.png>]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<imagenes/android-dev.png, id=268, 460.72125pt x 293.095pt>
+<imagenes/android-dev.png, id=254, 460.72125pt x 293.095pt>
 File: imagenes/android-dev.png Graphic file (type png)
 <use imagenes/android-dev.png>
 Package pdftex.def Info: imagenes/android-dev.png  used on input line 30.
@@ -1761,7 +1739,7 @@ Overfull \hbox (19.11612pt too wide) in paragraph at lines 2--34
 [][]  
  []
 
-) [18
+) [16
 
  <./imagenes/android-dev.png>] (./main.toc
 LaTeX Info: Redefining \. on input line 13.
@@ -1769,188 +1747,157 @@ LaTeX Info: Redefining \% on input line 13.
 )
 File: imagenes/agua-unl.png Graphic file (type png)
 <use imagenes/agua-unl.png>
-Package pdftex.def Info: imagenes/agua-unl.png  used on input line 391.
+Package pdftex.def Info: imagenes/agua-unl.png  used on input line 442.
 (pdftex.def)             Requested size: 90.33589pt x 90.33783pt.
- [19
+ [17
 
 ]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<imagenes/imachineapp-logo2.png, id=298, 545.03625pt x 336.25626pt>
+<imagenes/imachineapp-logo2.png, id=283, 545.03625pt x 336.25626pt>
 File: imagenes/imachineapp-logo2.png Graphic file (type png)
 <use imagenes/imachineapp-logo2.png>
 Package pdftex.def Info: imagenes/imachineapp-logo2.png  used on input line 13.
 
 (pdftex.def)             Requested size: 136.91603pt x 84.4692pt.
-) [20
+) [18
 
  <./imagenes/imachineapp-logo2.png>]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [21
+ (./main.vrb) [19
 
-]
-\openout4 = `main.vrb'.
-
- (./main.vrb
-<imagenes/casosdeusoImachineApp.png, id=315, 659.46375pt x 470.75874pt>
-File: imagenes/casosdeusoImachineApp.png Graphic file (type png)
-<use imagenes/casosdeusoImachineApp.png>
-Package pdftex.def Info: imagenes/casosdeusoImachineApp.png  used on input line
- 5.
-(pdftex.def)             Requested size: 273.83728pt x 195.48335pt.
-)
-Overfull \vbox (3.49802pt too high) detected at line 439
- []
-
-[22
-
- <./imagenes/casosdeusoImachineApp.png>] (./main.toc
+] (./main.toc
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
 )
 File: imagenes/agua-unl.png Graphic file (type png)
 <use imagenes/agua-unl.png>
-Package pdftex.def Info: imagenes/agua-unl.png  used on input line 449.
+Package pdftex.def Info: imagenes/agua-unl.png  used on input line 500.
 (pdftex.def)             Requested size: 90.33589pt x 90.33783pt.
- [23
-
-]
-\openout4 = `main.vrb'.
-
- (./main.vrb)
-[24
-
-]
-\openout4 = `main.vrb'.
-
- (./main.vrb) [25
+ [20
 
 ]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<imagenes/mvp-imachineapp.png, id=357, 857.2025pt x 610.28pt>
-File: imagenes/mvp-imachineapp.png Graphic file (type png)
-<use imagenes/mvp-imachineapp.png>
-Package pdftex.def Info: imagenes/mvp-imachineapp.png  used on input line 5.
-(pdftex.def)             Requested size: 273.83728pt x 194.95834pt.
-)
-Overfull \vbox (2.973pt too high) detected at line 494
+<imagenes/mvp-basic.png, id=319, 780.9175pt x 684.5575pt>
+File: imagenes/mvp-basic.png Graphic file (type png)
+<use imagenes/mvp-basic.png>
+Package pdftex.def Info: imagenes/mvp-basic.png  used on input line 33.
+(pdftex.def)             Requested size: 142.26378pt x 124.70872pt.
+
+Overfull \hbox (19.11612pt too wide) in paragraph at lines 19--37
+[]  
  []
 
-[26
+) [21
 
- <./imagenes/mvp-imachineapp.png>] (./main.toc
+ <./imagenes/mvp-basic.png (PNG copy)>]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [22
+
+] (./main.toc
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
 )
 File: imagenes/agua-unl.png Graphic file (type png)
 <use imagenes/agua-unl.png>
-Package pdftex.def Info: imagenes/agua-unl.png  used on input line 505.
+Package pdftex.def Info: imagenes/agua-unl.png  used on input line 575.
 (pdftex.def)             Requested size: 90.33589pt x 90.33783pt.
- [27
+
+[23
 
 ]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<imagenes/ciengine-abstract.png, id=384, 736.7525pt x 161.60374pt>
+<imagenes/ciengine-abstract.png, id=352, 736.7525pt x 161.60374pt>
 File: imagenes/ciengine-abstract.png Graphic file (type png)
 <use imagenes/ciengine-abstract.png>
 Package pdftex.def Info: imagenes/ciengine-abstract.png  used on input line 19.
 
 (pdftex.def)             Requested size: 308.06367pt x 67.57227pt.
 )
-Overfull \vbox (0.58774pt too high) detected at line 533
+Overfull \vbox (0.58774pt too high) detected at line 603
  []
 
-[28
+[24
 
  <./imagenes/ciengine-abstract.png>]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<imagenes/tensorflow.jpeg, id=394, 1084.05pt x 610.28pt>
+<imagenes/tensorflow.jpeg, id=361, 1084.05pt x 610.28pt>
 File: imagenes/tensorflow.jpeg Graphic file (type jpg)
 <use imagenes/tensorflow.jpeg>
-Package pdftex.def Info: imagenes/tensorflow.jpeg  used on input line 26.
+Package pdftex.def Info: imagenes/tensorflow.jpeg  used on input line 27.
 (pdftex.def)             Requested size: 142.26378pt x 80.08415pt.
 )
-Overfull \hbox (19.11612pt too wide) in paragraph at lines 2--565
+Overfull \hbox (19.11612pt too wide) in paragraph at lines 2--636
 [][]  
  []
 
-[29
+[25
 
  <./imagenes/tensorflow.jpeg>]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<imagenes/MobileNet2.png, id=402, 637.38126pt x 383.4325pt>
+<imagenes/MobileNet2.png, id=370, 637.38126pt x 383.4325pt>
 File: imagenes/MobileNet2.png Graphic file (type png)
 <use imagenes/MobileNet2.png>
 Package pdftex.def Info: imagenes/MobileNet2.png  used on input line 9.
 (pdftex.def)             Requested size: 222.48985pt x 133.84064pt.
 )
-Overfull \vbox (3.38449pt too high) detected at line 579
+Overfull \vbox (3.38449pt too high) detected at line 650
  []
 
-[30
+[26
 
  <./imagenes/MobileNet2.png>]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<imagenes/WordNetExample.png, id=411, 366.36874pt x 286.06876pt>
+<imagenes/WordNetExample.png, id=379, 366.36874pt x 286.06876pt>
 File: imagenes/WordNetExample.png Graphic file (type png)
 <use imagenes/WordNetExample.png>
 Package pdftex.def Info: imagenes/WordNetExample.png  used on input line 9.
 (pdftex.def)             Requested size: 171.14764pt x 133.63606pt.
 )
-Overfull \vbox (1.05075pt too high) detected at line 593
+Overfull \vbox (1.05075pt too high) detected at line 664
  []
 
-[31
+[27
 
  <./imagenes/WordNetExample.png>]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<imagenes/ciengine-paso1.png, id=421, 648.4225pt x 391.4625pt>
+<imagenes/ciengine-paso1.png, id=388, 648.4225pt x 391.4625pt>
 File: imagenes/ciengine-paso1.png Graphic file (type png)
 <use imagenes/ciengine-paso1.png>
 Package pdftex.def Info: imagenes/ciengine-paso1.png  used on input line 5.
 (pdftex.def)             Requested size: 273.83728pt x 165.32104pt.
-) [32
+) [28
 
  <./imagenes/ciengine-paso1.png>]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<imagenes/preProcessing.png, id=431, 683.55376pt x 332.24126pt>
+<imagenes/preProcessing.png, id=397, 683.55376pt x 332.24126pt>
 File: imagenes/preProcessing.png Graphic file (type png)
 <use imagenes/preProcessing.png>
 Package pdftex.def Info: imagenes/preProcessing.png  used on input line 11.
 (pdftex.def)             Requested size: 239.60567pt x 116.45854pt.
-) [33
+) [29
 
  <./imagenes/preProcessing.png>]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-File: imagenes/ciengine-paso1.png Graphic file (type png)
-<use imagenes/ciengine-paso1.png>
-Package pdftex.def Info: imagenes/ciengine-paso1.png  used on input line 5.
-(pdftex.def)             Requested size: 273.83728pt x 165.32104pt.
-) [34
-
-]
-\openout4 = `main.vrb'.
-
-
-(./main.vrb
 File: imagenes/MobileNet2.png Graphic file (type png)
 <use imagenes/MobileNet2.png>
 Package pdftex.def Info: imagenes/MobileNet2.png  used on input line 11.
@@ -1959,13 +1906,14 @@ File: imagenes/WordNetExample.png Graphic file (type png)
 <use imagenes/WordNetExample.png>
 Package pdftex.def Info: imagenes/WordNetExample.png  used on input line 13.
 (pdftex.def)             Requested size: 136.91603pt x 106.90884pt.
-) [35
+) [30
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb
-<imagenes/embeddings.png, id=454, 468.75125pt x 385.44pt>
+
+(./main.vrb
+<imagenes/embeddings.png, id=413, 468.75125pt x 385.44pt>
 File: imagenes/embeddings.png Graphic file (type png)
 <use imagenes/embeddings.png>
 Package pdftex.def Info: imagenes/embeddings.png  used on input line 12.
@@ -1976,47 +1924,47 @@ Package pdftex.def Info: imagenes/deep-learning-model.png  used on input line 1
 4.
 (pdftex.def)             Requested size: 171.14764pt x 101.19495pt.
 )
-Overfull \vbox (5.88765pt too high) detected at line 667
+Overfull \vbox (5.88765pt too high) detected at line 738
  []
 
-[36
+[31
 
  <./imagenes/embeddings.png>]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [37
+ (./main.vrb) [32
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [38
+ (./main.vrb) [33
 
 ]
 \openout4 = `main.vrb'.
 
 
 (./main.vrb
-<imagenes/mcl.png, id=479, 566.115pt x 132.495pt>
+<imagenes/mcl.png, id=439, 566.115pt x 132.495pt>
 File: imagenes/mcl.png Graphic file (type png)
 <use imagenes/mcl.png>
 Package pdftex.def Info: imagenes/mcl.png  used on input line 9.
 (pdftex.def)             Requested size: 342.2953pt x 80.11421pt.
-) [39
+) [34
 
  <./imagenes/mcl.png (PNG copy)>]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [40
+ (./main.vrb) [35
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [41
+ (./main.vrb) [36
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [42
+ (./main.vrb) [37
 
 ] (./main.toc
 LaTeX Info: Redefining \. on input line 13.
@@ -2024,200 +1972,62 @@ LaTeX Info: Redefining \% on input line 13.
 )
 File: imagenes/agua-unl.png Graphic file (type png)
 <use imagenes/agua-unl.png>
-Package pdftex.def Info: imagenes/agua-unl.png  used on input line 782.
+Package pdftex.def Info: imagenes/agua-unl.png  used on input line 855.
 (pdftex.def)             Requested size: 90.33589pt x 90.33783pt.
- [43
+ [38
 
 ]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<imagenes/imachineapp1.png, id=529, 90.5784pt x 156.585pt>
-File: imagenes/imachineapp1.png Graphic file (type png)
-<use imagenes/imachineapp1.png>
-Package pdftex.def Info: imagenes/imachineapp1.png  used on input line 6.
-(pdftex.def)             Requested size: 102.68962pt x 177.52196pt.
-) [44
+<imagenes/demotime2.png, id=489, 602.25pt x 702.625pt>
+File: imagenes/demotime2.png Graphic file (type png)
+<use imagenes/demotime2.png>
+Package pdftex.def Info: imagenes/demotime2.png  used on input line 6.
+(pdftex.def)             Requested size: 136.91603pt x 159.73486pt.
+) [39
 
- <./imagenes/imachineapp1.png>]
+ <./imagenes/demotime2.png>]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<imagenes/imachineapp2.png, id=538, 72.5109pt x 127.9179pt>
-File: imagenes/imachineapp2.png Graphic file (type png)
-<use imagenes/imachineapp2.png>
-Package pdftex.def Info: imagenes/imachineapp2.png  used on input line 6.
-(pdftex.def)             Requested size: 102.68962pt x 181.16255pt.
-<imagenes/imachineapp3.png, id=539, 72.5109pt x 128.6406pt>
-File: imagenes/imachineapp3.png Graphic file (type png)
-<use imagenes/imachineapp3.png>
-Package pdftex.def Info: imagenes/imachineapp3.png  used on input line 8.
-(pdftex.def)             Requested size: 102.68962pt x 182.18608pt.
-<imagenes/imachineapp4.png, id=540, 72.27pt x 129.1224pt>
-File: imagenes/imachineapp4.png Graphic file (type png)
-<use imagenes/imachineapp4.png>
-Package pdftex.def Info: imagenes/imachineapp4.png  used on input line 10.
-(pdftex.def)             Requested size: 102.68962pt x 183.48119pt.
-)
-Overfull \vbox (7.83334pt too high) detected at line 809
- []
-
-[45
-
- <./imagenes/imachineapp2.png> <./imagenes/imachineapp3.png> <./imagenes/imachi
-neapp4.png>]
-\openout4 = `main.vrb'.
-
- (./main.vrb
-<imagenes/imachineapp5.png, id=551, 1084.05pt x 1927.2pt>
-File: imagenes/imachineapp5.png Graphic file (type png)
-<use imagenes/imachineapp5.png>
-Package pdftex.def Info: imagenes/imachineapp5.png  used on input line 6.
-(pdftex.def)             Requested size: 102.68962pt x 182.55658pt.
-)
-Overfull \vbox (6.30042pt too high) detected at line 820
- []
-
-[46
-
- <./imagenes/imachineapp5.png>]
-\openout4 = `main.vrb'.
-
- (./main.vrb
-<imagenes/imachineapp6.png, id=560, 1084.05pt x 1927.2pt>
-File: imagenes/imachineapp6.png Graphic file (type png)
-<use imagenes/imachineapp6.png>
-Package pdftex.def Info: imagenes/imachineapp6.png  used on input line 6.
-(pdftex.def)             Requested size: 102.68962pt x 182.55658pt.
-<imagenes/imachineapp7.png, id=561, 1084.05pt x 1927.2pt>
-File: imagenes/imachineapp7.png Graphic file (type png)
-<use imagenes/imachineapp7.png>
-Package pdftex.def Info: imagenes/imachineapp7.png  used on input line 8.
-(pdftex.def)             Requested size: 102.68962pt x 182.55658pt.
-<imagenes/imachineapp8.png, id=562, 72.27pt x 126.7134pt>
-File: imagenes/imachineapp8.png Graphic file (type png)
-<use imagenes/imachineapp8.png>
-Package pdftex.def Info: imagenes/imachineapp8.png  used on input line 10.
-(pdftex.def)             Requested size: 102.68962pt x 180.058pt.
-)
-Overfull \vbox (6.30042pt too high) detected at line 835
- []
-
-[47
-
- <./imagenes/imachineapp6.png> <./imagenes/imachineapp7.png> <./imagenes/imachi
-neapp8.png>]
-\openout4 = `main.vrb'.
-
- (./main.vrb
-<imagenes/imachineapp9.png, id=574, 1084.05pt x 1927.2pt>
-File: imagenes/imachineapp9.png Graphic file (type png)
-<use imagenes/imachineapp9.png>
-Package pdftex.def Info: imagenes/imachineapp9.png  used on input line 6.
-(pdftex.def)             Requested size: 102.68962pt x 182.55658pt.
-<imagenes/imachineapp10.png, id=575, 1084.05pt x 1927.2pt>
-File: imagenes/imachineapp10.png Graphic file (type png)
-<use imagenes/imachineapp10.png>
-Package pdftex.def Info: imagenes/imachineapp10.png  used on input line 8.
-(pdftex.def)             Requested size: 102.68962pt x 182.55658pt.
-<imagenes/imachineapp11.png, id=576, 1084.05pt x 1927.2pt>
-File: imagenes/imachineapp11.png Graphic file (type png)
-<use imagenes/imachineapp11.png>
-Package pdftex.def Info: imagenes/imachineapp11.png  used on input line 10.
-(pdftex.def)             Requested size: 102.68962pt x 182.55658pt.
-)
-Overfull \vbox (6.30042pt too high) detected at line 850
- []
-
-[48
-
- <./imagenes/imachineapp9.png> <./imagenes/imachineapp10.png> <./imagenes/imach
-ineapp11.png>]
-\openout4 = `main.vrb'.
-
- (./main.vrb
-<imagenes/imachineapp12.png, id=587, 1084.05pt x 1927.2pt>
-File: imagenes/imachineapp12.png Graphic file (type png)
-<use imagenes/imachineapp12.png>
-Package pdftex.def Info: imagenes/imachineapp12.png  used on input line 6.
-(pdftex.def)             Requested size: 102.68962pt x 182.55658pt.
-)
-Overfull \vbox (4.17125pt too high) detected at line 861
- []
-
-[49
-
- <./imagenes/imachineapp12.png>]
-\openout4 = `main.vrb'.
-
- (./main.vrb
-<imagenes/imachineapp13.png, id=597, 74.1972pt x 131.2905pt>
-File: imagenes/imachineapp13.png Graphic file (type png)
-<use imagenes/imachineapp13.png>
-Package pdftex.def Info: imagenes/imachineapp13.png  used on input line 6.
-(pdftex.def)             Requested size: 102.68962pt x 181.70993pt.
-<imagenes/imachineapp14.png, id=598, 1084.05pt x 1927.2pt>
-File: imagenes/imachineapp14.png Graphic file (type png)
-<use imagenes/imachineapp14.png>
-Package pdftex.def Info: imagenes/imachineapp14.png  used on input line 8.
-(pdftex.def)             Requested size: 102.68962pt x 182.55658pt.
-)
-Overfull \vbox (4.17125pt too high) detected at line 874
- []
-
-[50
-
- <./imagenes/imachineapp13.png> <./imagenes/imachineapp14.png>]
-\openout4 = `main.vrb'.
-
- (./main.vrb
-<imagenes/imachineapp-english.png, id=608, 1084.05pt x 1927.2pt>
+<imagenes/imachineapp-english.png, id=498, 1084.05pt x 1927.2pt>
 File: imagenes/imachineapp-english.png Graphic file (type png)
 <use imagenes/imachineapp-english.png>
 Package pdftex.def Info: imagenes/imachineapp-english.png  used on input line 1
 8.
 (pdftex.def)             Requested size: 113.81102pt x 202.31786pt.
 )
-Overfull \vbox (2.41255pt too high) detected at line 898
+Overfull \vbox (2.41255pt too high) detected at line 982
  []
 
-[51
+[40
 
- <./imagenes/imachineapp-english.png (PNG copy)>]
-\openout4 = `main.vrb'.
-
- (./main.vrb
-<imagenes/demotime2.png, id=616, 602.25pt x 702.625pt>
-File: imagenes/demotime2.png Graphic file (type png)
-<use imagenes/demotime2.png>
-Package pdftex.def Info: imagenes/demotime2.png  used on input line 6.
-(pdftex.def)             Requested size: 136.91603pt x 159.73486pt.
-) [52
-
- <./imagenes/demotime2.png>] (./main.toc
+ <./imagenes/imachineapp-english.png (PNG copy)>] (./main.toc
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
 )
 File: imagenes/agua-unl.png Graphic file (type png)
 <use imagenes/agua-unl.png>
-Package pdftex.def Info: imagenes/agua-unl.png  used on input line 923.
+Package pdftex.def Info: imagenes/agua-unl.png  used on input line 996.
 (pdftex.def)             Requested size: 90.33589pt x 90.33783pt.
- [53
+ [41
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb
-<imagenes/basededatos2.png, id=643, 722.7pt x 542.025pt>
+
+(./main.vrb
+<imagenes/basededatos2.png, id=524, 722.7pt x 542.025pt>
 File: imagenes/basededatos2.png Graphic file (type png)
 <use imagenes/basededatos2.png>
 Package pdftex.def Info: imagenes/basededatos2.png  used on input line 11.
 (pdftex.def)             Requested size: 239.60567pt x 179.70413pt.
 )
-Overfull \vbox (35.64798pt too high) detected at line 940
+Overfull \vbox (35.64798pt too high) detected at line 1013
  []
 
-[54
+[42
 
  <./imagenes/basededatos2.png>] (./main.toc
 LaTeX Info: Redefining \. on input line 13.
@@ -2225,71 +2035,71 @@ LaTeX Info: Redefining \% on input line 13.
 )
 File: imagenes/agua-unl.png Graphic file (type png)
 <use imagenes/agua-unl.png>
-Package pdftex.def Info: imagenes/agua-unl.png  used on input line 950.
+Package pdftex.def Info: imagenes/agua-unl.png  used on input line 1023.
 (pdftex.def)             Requested size: 90.33589pt x 90.33783pt.
- [55
+ [43
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [56
+ (./main.vrb) [44
 
 ]
 \openout4 = `main.vrb'.
 
 
-(./main.vrb) [57
+(./main.vrb) [45
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [58
+ (./main.vrb) [46
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [59
+ (./main.vrb) [47
 
 ]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<imagenes/prueba3-1.png, id=704, 792.9625pt x 310.15875pt>
+<imagenes/prueba3-1.png, id=585, 792.9625pt x 310.15875pt>
 File: imagenes/prueba3-1.png Graphic file (type png)
 <use imagenes/prueba3-1.png>
 Package pdftex.def Info: imagenes/prueba3-1.png  used on input line 11.
 (pdftex.def)             Requested size: 256.72147pt x 100.41232pt.
-<imagenes/prueba3-2.png, id=705, 574.145pt x 129.48375pt>
+<imagenes/prueba3-2.png, id=586, 574.145pt x 129.48375pt>
 File: imagenes/prueba3-2.png Graphic file (type png)
 <use imagenes/prueba3-2.png>
 Package pdftex.def Info: imagenes/prueba3-2.png  used on input line 18.
 (pdftex.def)             Requested size: 171.14764pt x 38.59647pt.
 )
-Overfull \vbox (1.579pt too high) detected at line 1099
+Overfull \vbox (1.579pt too high) detected at line 1172
  []
 
-[60
+[48
 
  <./imagenes/prueba3-1.png> <./imagenes/prueba3-2.png>]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<imagenes/testing2.png, id=715, 578.16pt x 246.9225pt>
+<imagenes/testing2.png, id=596, 578.16pt x 246.9225pt>
 File: imagenes/testing2.png Graphic file (type png)
 <use imagenes/testing2.png>
 Package pdftex.def Info: imagenes/testing2.png  used on input line 8.
 (pdftex.def)             Requested size: 85.57382pt x 36.54697pt.
-<imagenes/prot-validacion-ej.png, id=716, 785.93625pt x 335.2525pt>
+<imagenes/prot-validacion-ej.png, id=597, 785.93625pt x 335.2525pt>
 File: imagenes/prot-validacion-ej.png Graphic file (type png)
 <use imagenes/prot-validacion-ej.png>
 Package pdftex.def Info: imagenes/prot-validacion-ej.png  used on input line 15
 .
 (pdftex.def)             Requested size: 256.72147pt x 109.50824pt.
 )
-Overfull \vbox (7.45876pt too high) detected at line 1124
+Overfull \vbox (7.45876pt too high) detected at line 1197
  []
 
-[61
+[49
 
  <./imagenes/testing2.png> <./imagenes/prot-validacion-ej.png>] (./main.toc
 LaTeX Info: Redefining \. on input line 13.
@@ -2297,14 +2107,14 @@ LaTeX Info: Redefining \% on input line 13.
 )
 File: imagenes/agua-unl.png Graphic file (type png)
 <use imagenes/agua-unl.png>
-Package pdftex.def Info: imagenes/agua-unl.png  used on input line 1135.
+Package pdftex.def Info: imagenes/agua-unl.png  used on input line 1208.
 (pdftex.def)             Requested size: 90.33589pt x 90.33783pt.
-[62
+[50
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [63
+ (./main.vrb) [51
 
 ]
 \openout4 = `main.vrb'.
@@ -2374,24 +2184,24 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no ! in font nullfont!
 Missing character: There is no 6 in font nullfont!
 Missing character: There is no 0 in font nullfont!
-) [64
+) [52
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [65
+ (./main.vrb) [53
 
 ]
 \openout4 = `main.vrb'.
 
  (./main.vrb
-<imagenes/preguntas.png, id=763, 712.6625pt x 403.5075pt>
+<imagenes/preguntas.png, id=644, 712.6625pt x 403.5075pt>
 File: imagenes/preguntas.png Graphic file (type png)
 <use imagenes/preguntas.png>
 Package pdftex.def Info: imagenes/preguntas.png  used on input line 10.
 (pdftex.def)             Requested size: 273.83728pt x 155.0461pt.
 )
-[66
+[54
 
  <./imagenes/preguntas.png>])
 \tf@nav=\write6
@@ -2412,20 +2222,20 @@ LaTeX Info: Redefining \% on input line 26.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 04D92B72A75251C94631F0676A88066D;843.
+(rerunfilecheck)             Checksum: 09C5DA4D84BCD3EDAE9B0102D8D96073;843.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 34277 strings out of 492982
- 800165 string characters out of 6134896
- 1029986 words of memory out of 5000000
- 36808 multiletter control sequences out of 15000+600000
+ 34119 strings out of 492982
+ 797133 string characters out of 6134896
+ 1029956 words of memory out of 5000000
+ 36714 multiletter control sequences out of 15000+600000
  18709 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,23n,98p,771b,884s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,22n,98p,771b,882s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texli
@@ -2437,10 +2247,10 @@ e1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/symbols/msam7.pfb>
-Output written on main.pdf (66 pages, 6672950 bytes).
+Output written on main.pdf (54 pages, 4306815 bytes).
 PDF statistics:
- 844 PDF objects out of 1000 (max. 8388607)
- 656 compressed objects within 7 object streams
- 149 named destinations out of 1000 (max. 500000)
- 422 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 720 PDF objects out of 1000 (max. 8388607)
+ 577 compressed objects within 6 object streams
+ 125 named destinations out of 1000 (max. 500000)
+ 342 words of extra memory for PDF output out of 10000 (max. 10000000)
 
