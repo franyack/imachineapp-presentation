@@ -151,31 +151,14 @@
 		{imagenes/imachineapp-logo}
 	\end{center}
 \end{figure}
-	
-	%En este proyecto se plantea como objetivo general el desarrollo de un framework que ofrezca la posibilidad de entrenar redes neuronales mediante los algoritmos y funcionalidades más populares del aprendizaje profundo, y reducir el esfuerzo de diseño y modelado utilizando herramientas de cómputo en paralelo. Esto último implica poder distribuir el trabajo computacional tanto a nivel local sobre los núcleos de un procesador, como también sobre los nodos que componen un clúster. Además se define como un objetivo específico evaluar la potencialidad del software desarrollado mediante su aplicación en tareas de alta complejidad, particularmente en problemas de clasificación sobre datos de electroencefalografía.
-	
-	
-	% ALCANCE
-	%\begin{itemize}
-	%	\item Se implementarán algoritmos de aprendizaje profundo con el enfoque de autocodificadores para el pre-entrenamiento de las redes neuronales.
-	%	\item El framework será pensado para ser reutilizado por desarrolladores, por lo que se prioriza su estructuración simple y fácil legibilidad en el código. A raíz de ello, se decide utilizar Python como lenguaje de programación.
-	%	\item La plataforma desarrollada se basará en el motor de procesamiento distribuido Apache Spark, una tecnología de código abierto que combina un gran poder de cómputo paralelo como su relativa facilidad de uso.
-	%	\item Se debe tener la posibilidad de realizar el trabajo de cómputo distribuido, tanto a nivel clúster como a nivel local (sobre los hilos de ejecución de una sola computadora).
-	%	\item Las señales cerebrales utilizadas para los casos de aplicación se consideran ya pre-procesadas de forma adecuada para ser utilizadas en las redes neuronales, por lo que el proyecto no contempla una investigación exhaustiva de las problemáticas involucradas en dichos casos.
-	%	\item Las bases de datos a utilizar serán obtenidas exclusivamente de forma gratuita.
-	%\end{itemize}
-
-
 \end{frame}
 
 \begin{frame}[t,fragile]
 \frametitle {Alcance}
-
-
 \begin{itemize}
 	\item Desarrollar de manera \textbf{nativa} la aplicación para el sistema operativo Android.
 	\vspace{2mm}
-	\item Implementar el algoritmo de procesamiento y extracción de características \textbf{on premise}.
+	\item Implementar el algoritmo de procesamiento y agrupación de imágenes \textbf{on premise}.
 	\vspace{2mm}
 	\item Asistir al usuario, brindando \textbf{herramientas de administración} para que pueda interactuar con el resultado.
 	\vspace{2mm}
@@ -667,8 +650,8 @@ La aplicación se desarrolló siguiendo el patrón de programación MVP:
 \frametitle {Etapa 1: Pre-procesamiento y extracción de características}
 \begin{figure}[t]
 	\begin{center}
-		\includegraphics[width=0.8\textwidth]%
-		{imagenes/ciengine-paso1}
+		\includegraphics[width=0.7\textwidth]%
+		{imagenes/ciengine-paso1v2}
 	\end{center}
 \end{figure}
 \end{frame}
@@ -725,7 +708,7 @@ Por cada imagen:
 	\item Se obtiene el vector de \textit{embeddings}.
 \end{itemize}
 \begin{block}{}
-	Los \textit{embeddings} representan como se activó la última capa antes de realizar la clasificación, y puede ser entendida como una noción de distancia entre las imágenes.
+	Los \textit{embeddings} representan como se activó la última capa antes de realizar la clasificación.% y puede ser utilizada como una representación vectorial que la red asimiló para poder caracterizar a la imagen procesada.
 \end{block}
 \begin{figure}[t]
 	\begin{center}
