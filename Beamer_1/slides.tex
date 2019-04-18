@@ -532,8 +532,13 @@ La aplicación se desarrolló siguiendo el patrón de programación MVP:
 	\vspace{7mm}
 	\item No es una buena práctica cargar de lógica a las actividades que se encargan de interactuar	con el usuario.
 	\vspace{7mm}
-	\item Deberían ser clases por las cuales simplemente la información que interactúa entre el sistema y el usuario fluye, desligándose de cualquier tipo de lógica de negocio.
+	\item Deberían ser clases por las cuales simplemente la información que interactúa entre el sistema y el usuario fluye.
 \end{itemize}
+\vspace{3mm}
+\begin{center}
+	$\Rightarrow$ \textbf{Enseñanza: } tomar un tiempo para elegir la arquitectura antes de comenzar con el desarrollo.
+
+\end{center}
 
 \end{frame}	
 %--------------------------------------- 
@@ -575,12 +580,12 @@ La aplicación se desarrolló siguiendo el patrón de programación MVP:
 		\item Servicio alojado en la nube.
 		\item Aplicación nativa en otros sistemas operativos utilizados en dispositivos móviles.
 	\end{itemize}
-	\item Se dividió en 3 etapas más un post-proceso:
+	\item Se dividió en 4 etapas:
 \end{itemize}
 \begin{figure}[t]
 	\begin{center}
 		\includegraphics[width=0.9\textwidth]%
-		{imagenes/ciengine-abstract}
+		{imagenes/ciengine-abstract2}
 	\end{center}
 \end{figure}
 \end{frame}
@@ -636,7 +641,7 @@ La aplicación se desarrolló siguiendo el patrón de programación MVP:
 \frametitle {MobileNet}
 \begin{itemize}
 	\item Dichos grupos están organizados acorde a una jerarquía de etiquetas, provenientes de una base de datos llamada \textbf{WordNet}.
-	\item Jerarquía: parten desde una madre o genérica, hacia el detalle en concreto.
+	\item Jerarquía: parten desde una genérica, hacia el detalle en concreto.
 \end{itemize} 
 \begin{figure}[t]
 	\begin{center}
@@ -746,7 +751,7 @@ Por cada imagen:
 		\item El vector caracterizador de cada una. $\rightarrow$ \textbf{Afinidad según \textit{embeddings}}
 	\end{enumerate}
 	\vspace{6mm}
-	\item Se registra en una matriz el grado de similitud entre cada par de imágenes.
+	\item Se registra en una matriz el grado de similitud entre cada par de imágenes \textbf{promediando} las 2 anteriores.
 \end{itemize}
 \vspace{6mm}
 \begin{center}
@@ -772,7 +777,7 @@ Por cada imagen:
 \begin{frame}[t,fragile]
 \frametitle {Markov clustering}
 \begin{itemize}
-	\item Algoritmo basado en grafos: rápido y escalable.
+	\item Algoritmo basado en grafos: \textbf{simple, rápido y escalable.}
 	\vspace{2mm}
 	\item No requiere instrucciones para ensamblar, unir o dividir grupos.
 	\vspace{2mm}
@@ -1166,12 +1171,14 @@ Se utilizaron 184 imágenes distribuidas en 6 clases diferentes:
 			{imagenes/testing2}
 		\end{center}
 	\end{figure}
-	\item \small{Se realizó un protocolo de validación de todos los módulos que componen la aplicación, con el objetivo de validar que se comporta y actúa según lo esperado. Ejemplo:}
+	\item \small{Se realizó un protocolo de validación de todos los módulos que componen la aplicación, con el objetivo de validar que se comporta y actúa según lo esperado.}
+	\pause
+	
 	\begin{figure}[t]
-		\begin{flushright}
+		\begin{center}
 			\includegraphics[width=0.75\textwidth]%
-			{imagenes/prot-validacion-ej}
-		\end{flushright}
+			{imagenes/prot-validacion-ej2}
+		\end{center}
 	\end{figure}
 \end{itemize}
 
@@ -1208,27 +1215,27 @@ Se utilizaron 184 imágenes distribuidas en 6 clases diferentes:
 			
 			\item Patrón de diseño de software: MVP
 			
-			\item Algoritmos de \textit{computer vision} y \textit{clustering} implementados (e.g APIs de TensorFlow, ImageNet, WordNet, MCL).
+			\item Algoritmos de \textit{computer vision} y \textit{clustering} implementados (e.g APIs de TensorFlow, MobileNet, ImageNet, MCL).
 		\end{itemize}
 		
 	\end{itemize}
 \end{frame}
 
 %---------------------------------------
-\begin{frame}[t,fragile]
-\frametitle {Conclusiones}
-
-\begin{figure}
-	\centering
-	\begin{tikzpicture}
-	\pie[text=legend, radius=2.5]{35/Programación, 20/Software, 30/Aplicación, 15/Matemáticas}
-	\end{tikzpicture}
-	
-	\caption{Gráfico de torta con las contribuciones de cada área curricular hacia el proyecto desarrollado (calculadas en forma subjetiva).}
-	\label{fig:pie-plot-asignaturas}
-\end{figure}
-
-\end{frame}
+%\begin{frame}[t,fragile]
+%\frametitle {Conclusiones}
+%
+%\begin{figure}
+%	\centering
+%	\begin{tikzpicture}
+%	\pie[text=legend, radius=2.5]{35/Programación, 20/Software, 30/Aplicación, 15/Matemáticas}
+%	\end{tikzpicture}
+%	
+%	\caption{Gráfico de torta con las contribuciones de cada área curricular hacia el proyecto desarrollado (calculadas en forma subjetiva).}
+%	\label{fig:pie-plot-asignaturas}
+%\end{figure}
+%
+%\end{frame}
 %---------------------------------------
 \begin{frame}[t,fragile]
 \frametitle {Trabajos futuros}
