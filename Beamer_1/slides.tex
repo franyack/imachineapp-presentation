@@ -162,7 +162,7 @@
 	\vspace{2mm}
 	\item Asistir al usuario, brindando \textbf{herramientas de administración} para que pueda interactuar con el resultado.
 	\vspace{2mm}
-	\item Procesar un total de \textbf{400 imágenes} en simultaneo.
+	\item Procesar un total de \textbf{400 imágenes} por ejecución.
 \end{itemize}
 
 
@@ -313,11 +313,8 @@
 	
 	\begin{figure}[t]
 	\begin{center}
-%		\includegraphics[width=0.4\textwidth]%
-%		{imagenes/ai-ml-dl}
-%		\vspace{2mm}
-		\includegraphics[width=0.55\textwidth]%
-		{imagenes/Why-Deep-Learning2}
+		\includegraphics[width=0.65\textwidth]%
+		{imagenes/Why-Deep-Learning3}
 	\end{center}
 \end{figure}
 	
@@ -371,8 +368,63 @@ Red Neuronal Convolucional (\textbf{CNN}):
 \end{figure}
 
 \end{frame}
-%---------------------------------------
+%--------------------------------------- 
+\begin{frame}[t,fragile]
+\frametitle {Algoritmo de agrupamiento elegido}
+\begin{block}{}
+	Para realizar el agrupamiento de las imágenes se utilizó el algoritmo de Markov (\textbf{MCL}).
+\end{block}
+\vspace{5mm}
+\begin{figure}[t]
+	\begin{center}
+		\includegraphics[width=1\textwidth]%
+		{imagenes/mcl}
+	\end{center}
+\end{figure}
 
+\end{frame}
+%--------------------------------------- 
+\begin{frame}[t,fragile]
+\frametitle {Markov clustering}
+\begin{itemize}
+\item Algoritmo basado en grafos: \textbf{simple, rápido y escalable.}
+\vspace{2mm}
+\item No requiere instrucciones para ensamblar, unir o dividir grupos.
+\vspace{2mm}
+\item No se necesita especificar la cantidad de grupos a obtener.
+\vspace{2mm}
+\item Utiliza dos operaciones algebraicas simples en matrices:
+\vspace{2mm}
+\begin{enumerate}
+	\item \textbf{Expansión:} Multiplicación normal de la matriz. $$M_i = M_i ^ e$$
+	\item \textbf{Inflación:} Potencia de Hadamard, seguida de una normalización. $$M_{ij} = M_{ij}^p$$
+\end{enumerate}
+\end{itemize}
+\end{frame}
+%---------------------------------------
+\begin{frame}[t,fragile]
+\frametitle {Markov clustering}
+Algoritmo: 
+\begin{itemize}
+\item Se llena la diagonal con valores 1.
+\vspace{2mm}
+\item Se normaliza la matriz.
+\vspace{2mm}
+\item \underline{Mientras que no converja o llegue al máximo de iteraciones:}
+\vspace{2mm}
+\begin{enumerate}
+\item Etapa de expansión.
+\vspace{2mm}
+\item Etapa de inflación
+\vspace{2mm}
+\item Normalización de la matriz
+\vspace{2mm}
+\item Se compara matriz actual contra matriz en la iteración anterior.
+\vspace{2mm}
+\item Se repite hasta que haya \textit{convergido} o supere la \textit{cantidad máxima de iteraciones}.
+\end{enumerate}
+\end{itemize}
+\end{frame}
 %---------------------------------------
 \begin{frame}[t,fragile]
 \frametitle{Programación en dispositivos móviles}
@@ -761,9 +813,6 @@ Por cada imagen:
 %--------------------------------------- 
 \begin{frame}[t,fragile]
 \frametitle {Etapa 3: Ejecución algoritmo de clustering}
-\begin{block}{}
-	Para realizar el agrupamiento de las imágenes se utilizó el algoritmo de Markov (\textbf{MCL}), desarrollado por Stijn van Dongen.
-\end{block}
 \vspace{5mm}
 \begin{figure}[t]
 	\begin{center}
@@ -771,55 +820,12 @@ Por cada imagen:
 		{imagenes/mcl}
 	\end{center}
 \end{figure}
-
-\end{frame}
-%--------------------------------------- 
-\begin{frame}[t,fragile]
-\frametitle {Markov clustering}
-\begin{itemize}
-	\item Algoritmo basado en grafos: \textbf{simple, rápido y escalable.}
-	\vspace{2mm}
-	\item No requiere instrucciones para ensamblar, unir o dividir grupos.
-	\vspace{2mm}
-	\item No se necesita especificar la cantidad de grupos a obtener.
-	\vspace{2mm}
-	\item Utiliza dos operaciones algebraicas simples en matrices:
-	\vspace{2mm}
-	\begin{enumerate}
-		\item \textbf{Expansión:} Multiplicación normal de la matriz. $$M_i = M_i ^ e$$
-		\item \textbf{Inflación:} Potencia de Hadamard, seguida de una normalización. $$M_{ij} = M_{ij}^p$$
-	\end{enumerate}
-\end{itemize}
-\end{frame}
-%---------------------------------------
-\begin{frame}[t,fragile]
-\frametitle {Markov clustering}
-Algoritmo: 
-\begin{itemize}
-	\item Se llena la diagonal con valores 1.
-	\vspace{2mm}
-	\item Se normaliza la matriz.
-	\vspace{2mm}
-	\item \underline{Mientras que no converja o llegue al máximo de iteraciones:}
-	\vspace{2mm}
-	\begin{enumerate}
-		\item Etapa de expansión.
-		\vspace{2mm}
-		\item Etapa de inflación
-		\vspace{2mm}
-		\item Normalización de la matriz
-		\vspace{2mm}
-		\item Se compara matriz actual contra matriz en la iteración anterior.
-		\vspace{2mm}
-		\item Se repite hasta que haya \textit{convergido} o supere la \textit{cantidad máxima de iteraciones}.
-	\end{enumerate}
-\end{itemize}
-
+\vspace{5mm}
 \begin{center}
-		$\Rightarrow$ Resultado: \textbf{Matriz final de clustering}
+	$\Rightarrow$ Resultado: \textbf{Matriz final de clustering}
 \end{center}
 \end{frame}
-%---------------------------------------
+%--------------------------------------- 
 \begin{frame}[t,fragile]
 \frametitle {Etapa 4: Post-proceso}
 Debido al origen de muchos grupos con 1 sola imagen, por cada una de ellas:
@@ -991,10 +997,10 @@ Debido al origen de muchos grupos con 1 sola imagen, por cada una de ellas:
 	\item Imágenes del portal de Internet 9GAG: 2.000 imágenes.
 	\item Base de datos VOC: 17.000 imágenes
 \end{itemize}
-\begin{figure}[t]
+\begin{figure}
 	\centering
 	\begin{center}
-		\includegraphics[width=0.7\textwidth]%
+		\includegraphics[width=0.6\textwidth]%
 		{imagenes/basededatos2}
 	\end{center}
 \end{figure}
