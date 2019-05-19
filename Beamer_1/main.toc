@@ -5,9 +5,9 @@
 \beamer@subsectionintoc {2}{1}{Dise\IeC {\~n}o del sistema}{20}{0}{2}
 \beamer@subsectionintoc {2}{2}{Arquitectura del sistema}{23}{0}{2}
 \beamer@subsectionintoc {2}{3}{Motor de procesamiento de las im\IeC {\'a}genes}{26}{0}{2}
-\beamer@subsectionintoc {2}{4}{Aplicaci\IeC {\'o}n Android}{39}{0}{2}
-\beamer@sectionintoc {3}{Evaluaci\IeC {\'o}n de desempe\IeC {\~n}o}{42}{0}{3}
-\beamer@subsectionintoc {3}{1}{Datos usados para la experimentaci\IeC {\'o}n}{42}{0}{3}
-\beamer@subsectionintoc {3}{2}{Protocolo de experimentaci\IeC {\'o}n}{44}{0}{3}
-\beamer@sectionintoc {4}{Conclusiones y discusi\IeC {\'o}n}{52}{0}{4}
+\beamer@subsectionintoc {2}{4}{Aplicaci\IeC {\'o}n Android}{43}{0}{2}
+\beamer@sectionintoc {3}{Evaluaci\IeC {\'o}n de desempe\IeC {\~n}o}{46}{0}{3}
+\beamer@subsectionintoc {3}{1}{Datos usados para la experimentaci\IeC {\'o}n}{46}{0}{3}
+\beamer@subsectionintoc {3}{2}{Protocolo de experimentaci\IeC {\'o}n}{48}{0}{3}
+\beamer@sectionintoc {4}{Conclusiones y discusi\IeC {\'o}n}{55}{0}{4}
 \babel@toc {spanish}{}

@@ -235,13 +235,13 @@
 \frametitle {Machine learning}
 
 \begin{itemize}
-	\item Los sistemas por lo general siguen dos tipos de aprendizaje: \color{red}{supervisado} \color{black} y 
+	\item Los dos tipos de aprendizaje mas usuales son: \color{darkgreen}{supervisado} \color{black} y 
 	\color{blue}no supervisado\color{black}.
 
 	\vspace{5mm}	
 	\item Las tareas a realizar suelen clasificarse en estas categorías: 
 	\begin{itemize}
-		\color{red} % SUPERVISADO
+		\color{darkgreen} % SUPERVISADO
 		\item Clasificación
 		\item Regresión
 		
@@ -250,6 +250,13 @@
 	\end{itemize}
 	
 \end{itemize}
+
+\begin{figure}[t]
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]%
+		{imagenes/machinelearningexamples}
+	\end{center}
+\end{figure}
 
 
 \end{frame}	
@@ -799,17 +806,38 @@ Por cada imagen:
 	\vspace{3mm}
 	\begin{enumerate}
 		\item Las etiquetas y probabilidades de cada una. $\rightarrow$ \textbf{Afinidad gramatical}
+	\end{enumerate}
+\end{itemize}
+	\pause
+	\begin{figure}[t]
+		\begin{center}
+			\includegraphics[width=0.55	\textwidth]%
+			{imagenes/gramatical_affinity}
+		\end{center}
+	\end{figure}
+\end{frame}
+%---------------------------------------
+\begin{frame}[t,fragile]
+\frametitle {Etapa 2: Medición de similitud}
+\begin{itemize}
+	\item Se mide el grado de similitud por cada par de imágenes basándose en:
+	\vspace{3mm}
+	\begin{enumerate}
+		\item Las etiquetas y probabilidades de cada una. $\rightarrow$ \textbf{Afinidad gramatical}
 		\vspace{3mm}
 		\item El vector caracterizador de cada una. $\rightarrow$ \textbf{Afinidad según \textit{embeddings}}
 	\end{enumerate}
+	\pause
 	\vspace{6mm}
 	\item Se registra en una matriz el grado de similitud entre cada par de imágenes \textbf{promediando} las 2 anteriores.
 \end{itemize}
+\pause
 \vspace{6mm}
 \begin{center}
 	$\Rightarrow$ Resultado: \textbf{Matriz de afinidad entre imágenes}
 \end{center}
 \end{frame}
+
 %--------------------------------------- 
 \begin{frame}[t,fragile]
 \frametitle {Etapa 3: Ejecución algoritmo de clustering}
@@ -963,7 +991,7 @@ Debido al origen de muchos grupos con 1 sola imagen, por cada una de ellas:
 					\item Si se elige ver resultados anteriores y no existen.
 					\item Se realiza un control de espacio de almacenamiento disponible.
 				\end{itemize} 
-				\item Multi-idioma: Español e Inglés
+				\item Multi-lenguaje: Español e Inglés
 			\end{itemize}
 		}
 	\end{tabular} 
@@ -1024,10 +1052,10 @@ Debido al origen de muchos grupos con 1 sola imagen, por cada una de ellas:
 	\begin{itemize}
 		\item No se espera tener un desempeño específico en términos de calidad de \textit{clustering}, por lo que no fue necesario realizar una comparación con el estado del arte en dicha tarea.
 		\vspace{2mm}
-		\item Métricas utilizadas - \color{red} Clasificación \color{black}y \color{blue} Clustering:
+		\item Métricas utilizadas - \color{darkgreen} Clasificación \color{black}y \color{blue} Clustering:
 		\vspace{2mm}
 		\begin{enumerate}
-			\item \color{red} Precisión, Recall, F1 Score, Accuracy
+			\item \color{darkgreen} Precisión, Recall, F1 Score, Accuracy
 			\item \color{blue} Sorensen-Dice, Silhouette 
 		\end{enumerate}
 	\end{itemize}
@@ -1047,7 +1075,7 @@ Debido al origen de muchos grupos con 1 sola imagen, por cada una de ellas:
 \frametitle {Prueba Nº 1}
 Se utilizaron 184 imágenes distribuidas en 6 clases diferentes:
 \begin{itemize}
-	\item \textbf{Accuracy:} 83.69\%
+	\item \textbf{\color{darkgreen}Accuracy:} 83.69\%
 \end{itemize}
 \begin{table}[t]
 	\begin{center}
@@ -1075,8 +1103,8 @@ Se utilizaron 184 imágenes distribuidas en 6 clases diferentes:
 	\end{center}
 \end{table}
 \begin{itemize}
-	\item \textbf{Silhouette:} 0.25
-	\item \textbf{Sorensen-Dice:} 0.83
+	\item \textbf{\color{blue}Silhouette:} 0.25
+	\item \textbf{\color{blue}Sorensen-Dice:} 0.83
 \end{itemize}
 \end{frame}
 %---------------------------------------
@@ -1108,44 +1136,44 @@ Se utilizaron 184 imágenes distribuidas en 6 clases diferentes:
 \end{center}
 \end{frame}
 %---------------------------------------
+%\begin{frame}[t,fragile]
+%\frametitle {Prueba Nº 2}
+%\begin{itemize}
+%	\item Se utilizaron 298 imágenes divididas en 5 grupos:
+%	\begin{itemize}
+%		\item \textbf{\color{red}Accuracy:} 55.7\%
+%		\item \textbf{\color{red}Precision:} 56.5\%
+%		\item \textbf{\color{red}Recall:} 62.5\%
+%		\item \textbf{\color{red}F1-Score:} 59.2\%
+%		\item \textbf{\color{blue}Silhouette:} 0.01\%
+%		\item \textbf{\color{blue}Sorensen-Dice:} 0.58\%
+%	\end{itemize}
+%\end{itemize}
+%\begin{table}[h!]
+%	\begin{center}
+%		\label{tab:tiempo2}
+%		\begin{adjustbox}{max width=\textwidth}
+%			\begin{tabular}{l|c}
+%				\hline
+%				\hline
+%				\textbf{Dispositivo} & \textbf{Tiempo de proceso (segundos)}\\
+%				\hline
+%				Moto G4 Plus & 215.24\\
+%				
+%				Xiaomi Redmi 4 & 138.20\\
+%				
+%				Samsung Galaxy S9 & 62.25\\
+%				\hline
+%			\end{tabular}
+%		\end{adjustbox}
+%	\end{center}
+%\end{table}
+%\end{frame}
+%---------------------------------------
 \begin{frame}[t,fragile]
 \frametitle {Prueba Nº 2}
 \begin{itemize}
-	\item Se utilizaron 298 imágenes divididas en 5 grupos:
-	\begin{itemize}
-		\item \textbf{\color{red}Accuracy:} 55.7\%
-		\item \textbf{\color{red}Precision:} 56.5\%
-		\item \textbf{\color{red}Recall:} 62.5\%
-		\item \textbf{\color{red}F1-Score:} 59.2\%
-		\item \textbf{\color{blue}Silhouette:} 0.01\%
-		\item \textbf{\color{blue}Sorensen-Dice:} 0.58\%
-	\end{itemize}
-\end{itemize}
-\begin{table}[h!]
-	\begin{center}
-		\label{tab:tiempo2}
-		\begin{adjustbox}{max width=\textwidth}
-			\begin{tabular}{l|c}
-				\hline
-				\hline
-				\textbf{Dispositivo} & \textbf{Tiempo de proceso (segundos)}\\
-				\hline
-				Moto G4 Plus & 215.24\\
-				
-				Xiaomi Redmi 4 & 138.20\\
-				
-				Samsung Galaxy S9 & 62.25\\
-				\hline
-			\end{tabular}
-		\end{adjustbox}
-	\end{center}
-\end{table}
-\end{frame}
-%---------------------------------------
-\begin{frame}[t,fragile]
-\frametitle {Prueba Nº 3}
-\begin{itemize}
-	\item \small{\textbf{\color{red}Accuracy:} 63\%}
+	\item \small{\textbf{\color{darkgreen}Accuracy:} 63\%}
 	\item \small{\textbf{\color{blue}Silhouette:} 0.16\%}
 	\item \small{\textbf{\color{blue}Sorensen-Dice:} 0.63\%}
 \end{itemize}
@@ -1210,7 +1238,7 @@ Se utilizaron 184 imágenes distribuidas en 6 clases diferentes:
 \frametitle {Conclusiones}
 
 	\begin{itemize}
-		\item \small{Producto de software sobre la plataforma Android que, sin la necesidad de una conexión a Internet y a partir de imágenes almacenadas en el dispositivo, sugiera una estructura de directorios para organizar el conjunto}
+		\item \small{Producto de software sobre la plataforma Android que, sin la necesidad de una conexión a Internet y a partir de imágenes almacenadas en el dispositivo, sugiera una estructura de directorios para organizar el conjunto.}
 		\vspace{3mm}
 		\item Provee funcionalidades que le permiten al usuario la interacción con el resultado anterior, adecuándolo a sus preferencias.
 		\vspace{3mm}
